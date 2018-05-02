@@ -1,0 +1,65 @@
+.. _flipnclick_sam3x:
+
+Flip & Click Sam3X
+==================
+
+The Flip & Click is a microcontroller board based on the Atmel `SAM3X8E ARM Cortex-M3 CPU <http://www.google.com/url?q=http%3A%2F%2Fwww.atmel.com%2FImages%2FAtmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf&sa=D&sntz=1&usg=AFQjCNFO3-2W_YnmZGERtqXMAenLWJmCcA>`_, produced by `Mikroelektronika <http://www.mikroe.com/flip-n-click/>`_ 
+
+.. figure:: /custom/img/flipnclick.jpg
+   :align: center
+   :figwidth: 400 
+   :alt: Flip & Click
+
+   
+
+
+ZERYNTH Pin Mapping and Associated Features 
+*********************************************
+
+.. figure:: /custom/img/flipnclickpin.png
+   :align: center
+   :figwidth: 800 
+   :alt: Flip & Click
+
+Mikroelektronika official manual is available `here <http://www.mikroe.com/download/eng/documents/development-tools/accessory-boards/click/flip-n-click/flip-n-click-v100.manual.web.pdf>`_
+
+
+ZERYNTH Flash Layout
+********************
+
+The internal flash of the Flip & Click Sam3X is organized into two banks of 256k each. Each bank is divided into 1024 pages of 256 bytes each. The first bank, starting at 0x80000, is used by the virtual machine runtime. The second bank is used to store bytecode and can be read and written from a Zerynth program using the internal flash module. The bytecode always starts at the address 0xC0000 (the starting address of the secon bank) and ends depending on its size. The second bank extends up to address 0x100000. If internal flash must be used in a Zerynth program, it is suggested to begin using pages from the end of the bank towards the bytecode, to minimize the chance of clashes.
+
+
+Board Summary
+******************
+
+* Microcontroller: AT91SAM3X8E
+* Operating Voltage: 3.3V
+* Input Voltage: 7-12V
+* Digital I/O Pins (DIO): 49 
+* Analog Input Pins (ADC): 5
+* UARTs: 4
+* SPIs: 1
+* I2Cs: 2
+* Flash Memory: 512 KB 
+* SRAM: 96 KB
+* Clock Speed: 84 MHz
+* Slots for Clicks: 4
+
+Power
+*******
+The Flip & Click can be powered via the USB connector or with an external power supply. The power source is selected automatically.
+External (non-USB) power can come either from an AC-to-DC adapter (wall-wart) or battery. The adapter can be connected by plugging a 2.1 mm center-positive plug into the board's power jack. Leads from a battery can be inserted in the Gnd and Vin pin headers of the POWER connector.
+The board can operate on an external supply of 6 to 20 volts. If supplied with less than 7V, however, the 5V pin may supply less than five volts and the board may be unstable. If using more than 12V, the voltage regulator may overheat and damage the board. The recommended range is 7 to 12 volts.
+
+Connect, Virtualize and Program
+*******************************
+
+The Flip & Click Programming port is connected to an ATmega16U2, which provides a virtual COM port to software on a connected computer. To recognize the device, Windows machines requires drivers that can be downloaded from `the Arduino download page <http://www.arduino.cc/en/Main/Software>`_, while OSX and Linux machines will recognize the board as a COM port automatically. Unfortunately drivers only downloadable package is not yet available on the Arduino website.
+
+The 16U2 is also connected to the SAM3X hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the board through the ATmega16U2 microcontroller. 
+
+Once connected on a USB port, if drivers have been correctly installed, the Flip & Click board is recognized by the ZERYNTH IDE and listed in the **Board Management Toolbar**. The Flip & Click can be virtualized by clicking the related IDE button without requiring any other user interventions. Once virtualized the DUE prints on the serial port the installed ZERYNTH Virtual Machine version. To test it, just open the ZERYNTH IDE serial console and reset the board through the dedicated button. The ZERYNTH VM version will be printed on the console.
+
+
+ZERYNTH scripts can be uploaded on virtualized Flip & Click by clicking the dedicated upload button available on the **Current Project** panel of the IDE. No user intervention on the board are required for the upload process.  

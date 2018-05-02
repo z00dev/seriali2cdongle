@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.bossac": "r2.1.1",
+        "vhal.zerynth.armcmx_atmelsamd21": "r2.1.1"
+    },
+    "description": "Add support for Arduino/Genuino Zero",
+    "fullname": "board.zerynth.genuino_zero",
+    "git_pointer": "zerynth://zerynth-boards/genuino_zero",
+    "info": {
+        "board": "Arduino/Genuino Zero",
+        "chip_manufacturer": "Microchip/Atmel",
+        "device": "samd21",
+        "family_type": "ARM Cortex M0+"
+    },
+    "keywords": [
+        "arduino",
+        "board",
+        "atmel",
+        "microchip"
+    ],
+    "repo": "official",
+    "title": "Arduino/Genuino Zero Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

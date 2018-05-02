@@ -1,0 +1,19 @@
+{
+    "dependencies": {},
+    "description": "Infrared send/receive functionalities",
+    "fullname": "lib.zerynth.infrared",
+    "git_pointer": "zerynth://zerynth-libs/zerynth-infrared",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth Infrared Library",
+        "type": "Protocol"
+    },
+    "keywords": [
+        "infrared"
+    ],
+    "repo": "official",
+    "title": "Infrared Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

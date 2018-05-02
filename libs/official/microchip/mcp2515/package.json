@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Driver for Microchip MCP2515 CAN Controller",
+    "fullname": "lib.microchip.mcp2515",
+    "git_pointer": "zerynth://zerynth-libs/microchip-mcp2515",
+    "info": {
+        "chip_manufacturer": "Microchip",
+        "chip_name": "MCP2515",
+        "name": "CAN Controller",
+        "type": "Interface"
+    },
+    "keywords": [
+        "CAN",
+        "Microchip",
+        "MCP2515"
+    ],
+    "repo": "official",
+    "title": "Microchip MCP2515 CAN Controller",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

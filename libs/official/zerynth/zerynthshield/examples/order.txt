@@ -1,0 +1,8 @@
+#Zerynth Shield
+	Zerynth_Shield_Basics
+	Microphone_Peak_Detector
+	Temperature_Sampling
+	Light_Controlled_PWM
+	Zerynth_Shield_Sensor_Pool
+	Touch_Smart_Detector
+	Zerynth_Shield_IR_Capture

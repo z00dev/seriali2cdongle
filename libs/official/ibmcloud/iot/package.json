@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "IBM Watson IoT support",
+    "fullname": "lib.ibmcloud.iot",
+    "git_pointer": "zerynth://zerynth-libs/ibmcloud-iot",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth IBM Cloud Watson IoT Library",
+        "type": "IoT Cloud"
+    },
+    "keywords": [
+        "watson",
+        "iot",
+        "ibmcloud"
+    ],
+    "repo": "official",
+    "title": "IBM Cloud Watson IoT Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

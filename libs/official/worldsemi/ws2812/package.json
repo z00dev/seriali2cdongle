@@ -1,0 +1,25 @@
+{
+    "dependencies": {},
+    "description": "Driver for Worldsemi WS2812 Intelligent Control LED",
+    "fullname": "lib.worldsemi.ws2812",
+    "git_pointer": "zerynth://zerynth-libs/worldsemi-ws2812",
+    "info": {
+        "chip_manufacturer": "Worldsemi",
+        "chip_name": "WS2812",
+        "name": "Worldsemi WS2812",
+        "type": "RGB LED"
+    },
+    "keywords": [
+        "strip",
+        "ring",
+        "WS2812",
+        "Worldsemi",
+        "Neopixel",
+        "adafruit",
+        "RGB led"
+    ],
+    "repo": "official",
+    "title": "Worldsemi WS2812",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

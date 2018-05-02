@@ -1,0 +1,30 @@
+{
+    "dependencies": {
+        "lib.microchip.winc1500": "r2.1.1",
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.bossac": "r2.1.1",
+        "vhal.zerynth.armcmx_atmelsamd21": "r2.1.1"
+    },
+    "description": "Add support for Adafruit Feather M0 Wi-Fi",
+    "fullname": "board.zerynth.adafruit_feather_m0wifi",
+    "git_pointer": "zerynth://zerynth-boards/adafruit_feather_m0wifi",
+    "info": {
+        "board": "Adafruit Feather M0 Wi-Fi",
+        "chip_manufacturer": "Microchip/Atmel",
+        "device": "samd21",
+        "family_type": "ARM Cortex M0+"
+    },
+    "keywords": [
+        "adafruit",
+        "feather",
+        "board",
+        "atmel",
+        "microchip",
+        "wifi",
+        "m0"
+    ],
+    "repo": "official",
+    "title": " Adafruit Feather M0 Wi-Fi Support Package",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

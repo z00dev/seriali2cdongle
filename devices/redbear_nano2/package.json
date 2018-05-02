@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "lib.nordic.nrf52_ble": "r2.1.1",
+        "sys.zerynth.armgcc": "r2.1.1",
+        "vhal.zerynth.armcmx_nrf52": "r2.1.1"
+    },
+    "description": "Add support for RedBear Nano 2",
+    "fullname": "board.zerynth.redbear_nano2",
+    "git_pointer": "zerynth://zerynth-boards/redbear_nano2",
+    "info": {
+        "board": "Redbear Nano BLE 2",
+        "chip_manufacturer": "Nordic",
+        "device": "nrf52832",
+        "family_type": "ARM Cortex M4"
+    },
+    "keywords": [
+        "redbear",
+        "ble",
+        "nordic",
+        "nfc"
+    ],
+    "repo": "official",
+    "title": "RedBear Nano 2 Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

@@ -1,0 +1,19 @@
+{
+    "dependencies": {},
+    "description": "Smart sensor library for easy digital/analogic sensors data acquisition",
+    "fullname": "lib.zerynth.smartsensors",
+    "git_pointer": "zerynth://zerynth-libs/zerynth-smartsensors",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth Smart Sensor Library",
+        "type": "Utility"
+    },
+    "keywords": [
+        "sensor"
+    ],
+    "repo": "official",
+    "title": "Smart Sensor Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "sys.zerynth.armgcc": "r2.1.1",
+        "vhal.zerynth.armcmx_stm32f4": "r2.1.1"
+    },
+    "description": "Add support for ST Nucleo F401RE",
+    "fullname": "board.zerynth.st_nucleof401re",
+    "git_pointer": "zerynth://zerynth-boards/st_nucleof401re",
+    "info": {
+        "board": "ST Nucleo F401RE",
+        "chip_manufacturer": "ST Microelectronics",
+        "device": "stm32f401",
+        "family_type": "ARM Cortex M4"
+    },
+    "keywords": [
+        "board",
+        "nucleo",
+        "stm",
+        "f401re"
+    ],
+    "repo": "official",
+    "title": "ST Nucleo F401RE Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

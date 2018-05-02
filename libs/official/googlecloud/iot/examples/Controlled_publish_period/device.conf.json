@@ -1,0 +1,6 @@
+{
+    "project_id": "my-project",
+    "cloud_region": "my-region",
+    "registry_id": "my-registry",
+    "device_id": "my-device"
+}

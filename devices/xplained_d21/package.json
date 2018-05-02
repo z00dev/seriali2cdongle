@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.bossac": "r2.1.1",
+        "vhal.zerynth.armcmx_atmelsamd21": "r2.1.1"
+    },
+    "description": "Add support for Xplained Pro SamD21",
+    "fullname": "board.zerynth.xplained_d21",
+    "git_pointer": "zerynth://zerynth-boards/xplained_d21",
+    "info": {
+        "board": "SAM D21 Xplained Dev Board",
+        "chip_manufacturer": "Microchip/Atmel",
+        "device": "samd21",
+        "family_type": "ARM Cortex M0+"
+    },
+    "keywords": [
+        "samd21",
+        "board",
+        "atmel",
+        "microchip"
+    ],
+    "repo": "official",
+    "title": "Xplained Pro SamD21 Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

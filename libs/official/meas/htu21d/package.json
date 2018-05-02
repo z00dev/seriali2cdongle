@@ -1,0 +1,22 @@
+{
+    "dependencies": {},
+    "description": "Driver for MEAS HTU21D Humidity and Temperature Sensor",
+    "fullname": "lib.meas.htu21d",
+    "git_pointer": "zerynth://zerynth-libs/meas-htu21d",
+    "info": {
+        "chip_manufacturer": "MEAS",
+        "chip_name": "HTU21D",
+        "name": "Humidity and Temperature Sensor",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "meas",
+        "humidity",
+        "temperature",
+        "sensor"
+    ],
+    "repo": "official",
+    "title": "HTU21D Humidity and Temperature Sensor",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

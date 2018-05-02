@@ -1,0 +1,20 @@
+{
+    "dependencies": {},
+    "description": "Ubidots support",
+    "fullname": "lib.ubidots.iot",
+    "git_pointer": "zerynth://zerynth-libs/ubidots-iot",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth Ubidots Library",
+        "type": "IoT Cloud"
+    },
+    "keywords": [
+        "ubidots",
+        "iot"
+    ],
+    "repo": "official",
+    "title": "Ubidots IoT Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

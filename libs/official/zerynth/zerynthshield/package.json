@@ -1,0 +1,22 @@
+{
+    "dependencies": {
+        "lib.zerynth.smartsensors": "r2.1.1"
+    },
+    "description": "Driver for the Zerynth shield",
+    "fullname": "lib.zerynth.zerynthshield",
+    "git_pointer": "zerynth://zerynth-libs/zerynth-zerynthshield",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth Shield Library",
+        "type": "Sensor and Actuator"
+    },
+    "keywords": [
+        "toi",
+        "sensor"
+    ],
+    "repo": "official",
+    "title": "Zerynth Shield Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

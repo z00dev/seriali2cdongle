@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Driver for Adafruit Bluefruit shields and breakouts",
+    "fullname": "lib.adafruit.bluefruit",
+    "git_pointer": "zerynth://zerynth-libs/adafruit-bluefruit",
+    "info": {
+        "chip_manufacturer": "Nordic",
+        "chip_name": "NRF51822",
+        "name": "Adafruit Bluefruit",
+        "type": "Connectivity"
+    },
+    "keywords": [
+        "wireless",
+        "adafruit",
+        "ble"
+    ],
+    "repo": "official",
+    "title": "Adafruit Bluefruit",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

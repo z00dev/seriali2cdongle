@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Driver Microchip MCP3201 ADC",
+    "fullname": "lib.microchip.mcp3201",
+    "git_pointer": "zerynth://zerynth-libs/microchip-mcp3201",
+    "info": {
+        "chip_manufacturer": "Microchip",
+        "chip_name": "MCP3201",
+        "name": "Analog-to-Digital Converter",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "adc",
+        "sar",
+        "microchip"
+    ],
+    "repo": "official",
+    "title": "Microchip MCP3201 Analog-to-Digital Converter",
+    "version": "r2.1.1",
+    "whatsnew": "first release"
+}

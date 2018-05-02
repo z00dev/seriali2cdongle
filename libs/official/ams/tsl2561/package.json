@@ -1,0 +1,22 @@
+{
+    "dependencies": {},
+    "description": "Driver for AMS TSL2561 Ambient Light Sensor",
+    "fullname": "lib.ams.tsl2561",
+    "git_pointer": "zerynth://zerynth-libs/ams-tsl2561",
+    "info": {
+        "chip_manufacturer": "AMS",
+        "chip_name": "TSL2561",
+        "name": "Ambient Light Sensor",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "ams",
+        "ambient",
+        "light",
+        "sensor"
+    ],
+    "repo": "official",
+    "title": "TSL2561 Ambient Light Sensor",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

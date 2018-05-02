@@ -1,0 +1,4 @@
+#STM
+    ##SPWF01SA
+		find_and_set_baud
+

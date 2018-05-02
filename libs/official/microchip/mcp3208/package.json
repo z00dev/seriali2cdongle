@@ -1,0 +1,22 @@
+{
+    "dependencies": {},
+    "description": "Driver Microchip MCP3204/3208 ADC",
+    "fullname": "lib.microchip.mcp3208",
+    "git_pointer": "zerynth://zerynth-libs/microchip-mcp3208",
+    "info": {
+        "chip_manufacturer": "Microchip",
+        "chip_name": "MCP3208",
+        "name": "Analog-to-Digital Converter",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "adc",
+        "sar",
+        "mcp3204",
+        "microchip"
+    ],
+    "repo": "official",
+    "title": "Microchip MCP3204/3208 Analog-to-Digital Converter",
+    "version": "r2.1.1",
+    "whatsnew": "first release"
+}

@@ -1,0 +1,34 @@
+{
+    "name":"SparkFun Photon RedBoard",
+    "target":"sparkfun_photon",
+    "cc":"armgcc",
+    "classes":["sparkfun_photon.Sparkfun_Photon","sparkfun_photon_dfu.S_PhotonDFU"],
+    "ram":128,
+    "flash":1024,
+    "family_type":"armcmx",
+    "family_name":"stm32f2",
+    "chip_model":"stm32f205",
+    "manual_reset": 1,
+    "preferred_baud":115200,
+    "board_producer":"Sparkfun",
+    "chip_manifacturer":"STM",
+    "architecture":"cortex-m3",
+    "gccopts":{
+        "cflags": ["-mcpu=cortex-m3","-mthumb", "-O2","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99"],
+        "defs": ["STM32F2XX","STM32F205xx","STM32F205xG","STM32F205RG","VM_DEFAULT_THREAD_SIZE=1024"]
+    },
+    "relocator":"cortex-m",
+    "type":"board",
+    "virtualizable":"S_PhotonDFU",
+    "has_alter_ego":"Sparkfun_Photon",
+    "uplink_reset": true,
+    "reset_time":2000,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

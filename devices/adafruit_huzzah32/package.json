@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "lib.espressif.esp32net": "r2.1.1",
+        "sys.zerynth.esptool": "r2.1.1",
+        "sys.zerynth.xtensalx6": "r2.1.1",
+        "vhal.zerynth.xtensalx6_esp32": "r2.1.1"
+    },
+    "description": "Add support for Adafruit Huzzah32",
+    "fullname": "board.zerynth.adafruit_huzzah32",
+    "git_pointer": "zerynth://zerynth-boards/adafruit_huzzah32",
+    "info": {
+        "board": "Adafruit Huzzah32",
+        "chip_manufacturer": "Espressif",
+        "device": "esp32",
+        "family_type": "Xtensa lx6"
+    },
+    "keywords": [
+        "adafruit",
+        "esp32",
+        "board"
+    ],
+    "repo": "official",
+    "title": "Adafruit Huzzah32 Support Package",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

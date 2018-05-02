@@ -1,0 +1,27 @@
+{
+    "dependencies": {
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.bossac": "r2.1.1",
+        "vhal.zerynth.armcmx_atmelsam3x": "r2.1.1"
+    },
+    "description": "Add support for FlipNClick",
+    "fullname": "board.zerynth.flipnclick_sam3x",
+    "git_pointer": "zerynth://zerynth-boards/flipnclick_sam3x8e",
+    "info": {
+        "board": "MikroElektronika Flip-n-Click",
+        "chip_manufacturer": "Microchip/Atmel",
+        "device": "sam3x8",
+        "family_type": "ARM Cortex M3"
+    },
+    "keywords": [
+        "arduino",
+        "board",
+        "atmel",
+        "microchip",
+        "mikroe"
+    ],
+    "repo": "official",
+    "title": "FlipNClick SAM3X Support Package",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

@@ -1,0 +1,42 @@
+{
+    "name":"Particle Photon",
+    "target":"particle_photon",
+    "cc":"armgcc",
+    "classes":["photon.Photon","photon_dfu.PhotonDFU"],
+    "ram":120,
+    "flash":1024,
+    "family_type":"armcmx",
+    "family_name":"stm32f2",
+    "chip_model":"stm32f205",
+    "manual_reset": 1,
+    "preferred_baud":115200,
+    "board_producer":"Particle",
+    "chip_manifacturer":"STM",
+    "architecture":"cortex-m3",
+    "gccopts":{
+        "cflags": ["-mcpu=cortex-m3","-mthumb", "-O2","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99","-fno-unwind-tables"],
+        "defs": ["STM32F2XX","STM32F205xx","STM32F205xG","STM32F205RG","VM_DEFAULT_THREAD_SIZE=3192"]
+    },
+    "relocator":"cortex-m",
+    "type":"board",
+    "virtualizable":"PhotonDFU",
+    "jtag_target":"stm32f2x.cfg",
+    "jtag_capable": 2,
+    "jtag_class":"Photon",
+    "jtag_chipid_command": "reset halt; mdw 0x1fff7a10; mdw 0x1fff7a14; mdw 0x1fff7a18",
+    "jtag_chipid_len":3,
+    "jtag_chipid_prefix":"0x1fff7",
+    "bytecode_offset":"0x8040000",
+    "vmstore_offset":"0x803FC00",
+    "has_alter_ego":"Photon",
+    "uplink_reset": true,
+    "reset_time":2000,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

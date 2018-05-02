@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "lib.nordic.nrf52_ble": "r2.1.1",
+        "sys.zerynth.armgcc": "r2.1.1",
+        "vhal.zerynth.armcmx_nrf52": "r2.1.1"
+    },
+    "description": "Add support for RedBear Blend 2",
+    "fullname": "board.zerynth.redbear_blend2",
+    "git_pointer": "zerynth://zerynth-boards/redbear_blend2",
+    "info": {
+        "board": "Redbear Blend BLE 2",
+        "chip_manufacturer": "Nordic",
+        "device": "nrf52832",
+        "family_type": "ARM Cortex M4"
+    },
+    "keywords": [
+        "redbear",
+        "ble",
+        "nordic",
+        "nfc"
+    ],
+    "repo": "official",
+    "title": "RedBear Blend 2 Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

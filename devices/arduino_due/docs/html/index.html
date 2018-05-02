@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Arduino DUE &mdash; Arduino Due 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/zerynth.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Arduino Due 1.0.0 documentation" href="#"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="#" class="fa fa-home"> Arduino Due</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Arduino DUE</a><ul>
+<li><a class="reference internal" href="#zerynth-pin-mapping-and-associated-features">ZERYNTH Pin Mapping and Associated Features</a></li>
+<li><a class="reference internal" href="#zerynth-flash-layout">ZERYNTH Flash Layout</a></li>
+<li><a class="reference internal" href="#board-summary">Board Summary</a></li>
+<li><a class="reference internal" href="#power">Power</a></li>
+<li><a class="reference internal" href="#connect-virtualize-and-program">Connect, Virtualize and Program</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Arduino Due</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>Arduino DUE</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="arduino-due">
+<span id="id1"></span><h1>Arduino DUE<a class="headerlink" href="#arduino-due" title="Permalink to this headline">¶</a></h1>
+<p>The Arduino Due is a microcontroller board based on the Atmel <a class="reference external" href="http://www.google.com/url?q=http%3A%2F%2Fwww.atmel.com%2FImages%2FAtmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFO3-2W_YnmZGERtqXMAenLWJmCcA">SAM3X8E ARM Cortex-M3 CPU</a>. It is the first Arduino board based on a 32-bit ARM core microcontroller. It has 54 digital input/output pins (of which 12 can be used as PWM outputs), 12 analog inputs, 4 UARTs (hardware serial ports), a 84 MHz clock, an USB OTG capable connection, 2 DAC (digital to analog), 2 TWI, a power jack, an SPI header, a JTAG header, a reset button and an erase button.</p>
+<div class="figure align-center" style="width: 400px">
+<img alt="Arduino Due" src="_images/ArduinoDue.jpg" />
+</div>
+<p><em>Arduino Due Board. Copyright arduino.cc</em></p>
+<p><strong>Warning:</strong> Unlike other Arduino boards, the Arduino Due board runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin could damage the board.</p>
+<p><strong>Note:</strong> all the reported information are extracted from the official <a class="reference external" href="http://www.arduino.cc/en/Main/ArduinoBoardDue">Arduino DUE page</a>, visit this page for more details and updates.</p>
+<div class="section" id="zerynth-pin-mapping-and-associated-features">
+<h2>ZERYNTH Pin Mapping and Associated Features<a class="headerlink" href="#zerynth-pin-mapping-and-associated-features" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" style="width: 700px">
+<img alt="Arduino Due" src="_images/ArduinoDuePin.png" />
+</div>
+<p>Arduino Official Schematic, Reference Design and Pin Mapping are available on the official <a class="reference external" href="http://www.arduino.cc/en/Main/ArduinoBoardDue">Arduino DUE reference page</a>.</p>
+</div>
+<div class="section" id="zerynth-flash-layout">
+<h2>ZERYNTH Flash Layout<a class="headerlink" href="#zerynth-flash-layout" title="Permalink to this headline">¶</a></h2>
+<p>The internal flash of the Arduino Due is organized into two banks of 256k each. Each bank is divided into 1024 pages of 256 bytes each. The first bank, starting at 0x80000, is used by the virtual machine runtime. The second bank is used to store bytecode and can be read and written from a Zerynth program using the internal flash module. The bytecode always starts at the address 0xC0000 (the starting address of the secon bank) and ends depending on its size. The second bank extends up to address 0x100000. If internal flash must be used in a Zerynth program, it is suggested to begin using pages from the end of the bank towards the bytecode, to minimize the chance of clashes.</p>
+</div>
+<div class="section" id="board-summary">
+<h2>Board Summary<a class="headerlink" href="#board-summary" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Microcontroller: AT91SAM3X8E</li>
+<li>Operating Voltage: 3.3V</li>
+<li>Input Voltage: 7-12V</li>
+<li>Digital I/O Pins (DIO): 54</li>
+<li>Analog Input Pins (ADC): 12</li>
+<li>Analog Outputs Pins (DAC): 2</li>
+<li>UARTs: 4</li>
+<li>SPIs: 1</li>
+<li>I2Cs: 1</li>
+<li>CAN: 2</li>
+<li>Flash Memory: 512 KB</li>
+<li>SRAM: 96 KB</li>
+<li>Clock Speed: 84 MHz</li>
+<li>Size (LxW mm): 101.52 x 53.3</li>
+</ul>
+</div>
+<div class="section" id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p>The Arduino Due can be powered via the USB connector or with an external power supply. The power source is selected automatically.
+External (non-USB) power can come either from an AC-to-DC adapter (wall-wart) or battery. The adapter can be connected by plugging a 2.1 mm center-positive plug into the board&#8217;s power jack. Leads from a battery can be inserted in the Gnd and Vin pin headers of the POWER connector.
+The board can operate on an external supply of 6 to 20 volts. If supplied with less than 7V, however, the 5V pin may supply less than five volts and the board may be unstable. If using more than 12V, the voltage regulator may overheat and damage the board. The recommended range is 7 to 12 volts.</p>
+</div>
+<div class="section" id="connect-virtualize-and-program">
+<h2>Connect, Virtualize and Program<a class="headerlink" href="#connect-virtualize-and-program" title="Permalink to this headline">¶</a></h2>
+<p>The Arduino DUE Programming port is connected to an ATmega16U2, which provides a virtual COM port to software on a connected computer. To recognize the device, Windows machines requires drivers that can be downloaded from <a class="reference external" href="http://www.arduino.cc/en/Main/Software">the Arduino download page</a>, while OSX and Linux machines will recognize the board as a COM port automatically. Unfortunately drivers only downloadable package is not yet available on the Arduino website.</p>
+<p>The 16U2 is also connected to the SAM3X hardware UART. Serial on pins RX0 and TX0 provides Serial-to-USB communication for programming the board through the ATmega16U2 microcontroller.</p>
+<p>Once connected on a USB port, if drivers have been correctly installed, the Arduino DUE board is recognized by the ZERYNTH IDE and listed in the <strong>Board Management Toolbar</strong>. The Arduino DUE can be virtualized by clicking the related IDE button without requiring any other user interventions. Once virtualized the DUE prints on the serial port the installed ZERYNTH Virtual Machine version. To test it, just open the ZERYNTH IDE serial console and reset the board through the dedicated button. The ZERYNTH VM version will be printed on the console.</p>
+<p>ZERYNTH scripts can be uploaded on virtualized Arduino DUE by clicking the dedicated upload button available on the <strong>Current Project</strong> panel of the IDE. No user intervention on the board are required for the upload process.</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright ZERYNTH Team.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ <script type="text/javascript">
+ var vurl
+ if(location.href.indexOf("127.0.0.1")>=0) vurl=location.protocol+"//"+location.host+"/docs"
+ else vurl="http://doc.zerynth.com"
+ $(document).ready(function(){
+                   $('.wy-breadcrumbs a:contains("Docs")').before('<a href="'+vurl+'">Zerynth</a> &#187;')
+                   $('.wy-side-nav-search > a').removeClass("fa-home").removeClass("fa")
+                   $('.wy-side-nav-search').prepend('<div class="viper-circle"><a href="'+vurl+'"><span style="color:#1c5e60" class="zerynth-Logo2"></span></a></div>')
+ })
+ </script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+    "name":"Olimex Esp32 EVB",
+    "target":"olimex_esp32evb",
+    "cc":"xtensalx6gcc",
+    "classes":["olimex_esp32evb.OlimexEsp32EVB"],
+    "ram":200,
+    "flash":16384,
+    "family_type":"xtensa-lx6",
+    "family_name":"esp32",
+    "chip_model":"esp32",
+    "manual_reset": 0,
+    "preferred_baud":115200,
+    "board_producer":"Olimex",
+    "chip_manifacturer":"Espressif",
+    "architecture":"xtensa-lx6",
+    "gccopts":{
+        "cflags": ["-Os","-Wpointer-arith","-Wno-implicit-function-declaration","-Wl,-EL","-fno-inline-functions","-nostdlib","-mlongcalls","-mtext-section-literals","-falign-functions=4","-ffunction-sections","-fdata-sections", "-DICACHE_FLASH","-std=c99"],
+        "defs": ["BYTECODE_ACCESS_ALIGNED_4","VM_DEFAULT_THREAD_SIZE=4096"]
+    },
+    "relocator":"xtensalx6",
+    "vm_chunk":1024,
+    "type":"board",
+    "virtualizable":"OlimexEsp32EVB",
+    "has_alter_ego":false,
+    "uplink_reset": "reset",
+    "reset_time": 4000,
+    "rodata_in_ram":true,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

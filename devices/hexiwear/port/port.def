@@ -1,0 +1,225 @@
+/* Port definition */
+
+////LAYOUT: hexiwear
+////PERIPHERALS: SERIAL0 SERIAL1 SERIAL2 SERIAL3 SERIAL4 ADC0 PWMD0 ICUD0 SPI0 SPI1 SPI2 SPI3 SPI4 I2C0 I2C1 I2C2 I2C3
+////CDEFINES: STM32F2xxx STM32F205 STM32F205RG BCM_BOARD_WM_N_BM_09
+
+const PinInfo const _vhalpinmap[] STORED = {
+
+    /* MicroBus1 */
+    /* D0 */                MAKE_PIN(PB, 2, HAS_EXT | HAS_ADC),
+    /* D1 */                MAKE_PIN(PB, 11, HAS_EXT | HAS_ADC),
+    /* D2 */                MAKE_PIN(PC, 4, HAS_EXT | HAS_ATM),             /* CS FOR SPI0 IN MB1 */
+    /* D3 */                MAKE_PIN(PC, 5, HAS_EXT | HAS_ATM | HAS_SPI),
+    /* D4 */                MAKE_PIN(PC, 7, HAS_EXT | HAS_SPI),
+    /* D5 */                MAKE_PIN(PC, 6, HAS_EXT | HAS_SPI),
+    /* D6 */                MAKE_PIN(PA, 10, HAS_EXT | HAS_ATM),
+    /* D7 */                MAKE_PIN(PB, 13, HAS_EXT | HAS_ATM),                      
+    /* D8 */                MAKE_PIN(PD, 2, HAS_EXT | HAS_ATM | HAS_SER),
+    /* D9 */                MAKE_PIN(PD, 3, HAS_EXT | HAS_ATM | HAS_SER),
+    /* D10 */               MAKE_PIN(PD, 8, HAS_EXT | HAS_I2C),
+    /* D11 */               MAKE_PIN(PD, 9, HAS_EXT | HAS_I2C),
+
+    /* MicroBus2 */
+    /* D12 */               MAKE_PIN(PB, 3, HAS_EXT | HAS_ADC),
+    /* D13 */               MAKE_PIN(PB, 19, HAS_EXT | HAS_ATM),
+    /* D14 */               MAKE_PIN(PC, 3, HAS_EXT | HAS_ATM),             /* CS FOR SPI0 IN MB2 */
+    /* D15 */               MAKE_PIN(PA, 11, HAS_EXT | HAS_ATM),
+    /* D16 */               MAKE_PIN(PB, 8, HAS_EXT),
+    /* D17 */               MAKE_PIN(PC, 16, HAS_EXT | HAS_SER),
+    /* D18 */               MAKE_PIN(PC, 17, HAS_EXT | HAS_SER),
+    
+    /* MicroBus3 */
+    /* D19 */               MAKE_PIN(PB, 6, HAS_EXT | HAS_ADC),
+    /* D20 */               MAKE_PIN(PB, 10, HAS_EXT | HAS_ADC),
+    /* D21 */               MAKE_PIN(PC, 2, HAS_EXT | HAS_ATM),             /* CS FOR SPI0 IN MB3 */
+    /* D22 */               MAKE_PIN(PA, 4, HAS_EXT | HAS_ATM),
+    /* D23 */               MAKE_PIN(PB, 7, HAS_EXT | HAS_ADC),
+
+    /* MicroSD Slot */
+    /* D24 */               MAKE_PIN(PE, 5, HAS_EXT),
+    /* D25 */               MAKE_PIN(PE, 4, HAS_EXT),                       /* CS FOR SPI1 IN SD SLOT */
+    /* D26 */               MAKE_PIN(PE, 3, HAS_EXT | HAS_SPI),  
+    /* D27 */               MAKE_PIN(PE, 2, HAS_EXT | HAS_SPI),  
+    /* D28 */               MAKE_PIN(PE, 1, HAS_EXT | HAS_SPI),             /* HAS_I2C | HAS_SER */
+    /* D29 */               MAKE_PIN(PE, 0, HAS_EXT),                       /* HAS_I2C | HAS_SER */
+
+    /* I2S Header */
+    /* D30 */               MAKE_PIN(PA, 17, HAS_EXT | HAS_ADC | HAS_SPI),
+    /* D31 */               MAKE_PIN(PA, 15, HAS_EXT | HAS_SPI | HAS_SER),
+    /* D32 */               MAKE_PIN(PA, 16, HAS_EXT | HAS_SPI),
+    /* D33 */               MAKE_PIN(PA, 14, HAS_EXT | HAS_SER | HAS_I2C),  /* LED2 & BTN2 ON DOCKING STATION && CS FOR SPI0 IN I2S HEADER */
+    /* D34 */               MAKE_PIN(PA, 12, HAS_EXT | HAS_ATM),            /* LED0 & BTN0 ON DOCKING STATION */
+    /* D35 */               MAKE_PIN(PA, 13, HAS_EXT | HAS_ATM | HAS_I2C),  /* LED1 & BTN1 ON DOCKING STATION */
+    /* D36 */               MAKE_PIN(PA, 5, HAS_EXT | HAS_ATM),
+    
+    /* I2C Internal Components */
+    /* D37 */               MAKE_PIN(PB, 1, HAS_EXT | HAS_I2C),   /* I2C FOR HEART BEAT, AMBIENT LIGHT, HUMIDITY */
+    /* D38 */               MAKE_PIN(PB, 0, HAS_EXT | HAS_I2C),
+    /* D39 */               MAKE_PIN(PC, 11, HAS_EXT | HAS_I2C),  /* I2C FOR ACCELEROMETER, GYROSCOPE, PRESSURE */
+    /* D40 */               MAKE_PIN(PC, 10, HAS_EXT | HAS_I2C),  
+    /* D41 */               MAKE_PIN(PC, 15, HAS_EXT),            /* RST PIN FOR ACC & GYRO */
+    /* D42 */               MAKE_PIN(PC, 1, HAS_EXT),             /* INT1 PIN FOR ACC */
+    /* D43 */               MAKE_PIN(PD, 13, HAS_EXT),            /* INT2 PIN FOR ACC */
+    /* D44 */               MAKE_PIN(PC, 0, HAS_EXT),             /* INT1 PIN FOR AMBIENT LIGHT SENSOR */
+    /* D45 */               MAKE_PIN(PD, 1, HAS_EXT),             /* INT1 FOR GYRO */
+    /* D46 */               MAKE_PIN(PC, 18, HAS_EXT),            /* INT2 FOR GYRO */
+    /* D47 */               MAKE_PIN(PB, 18, HAS_EXT),            /* INT1 FOR HEART BEAT SENSOR */
+    /* D48 */               MAKE_PIN(PD, 12, HAS_EXT),            /* INT1 FOR PRESSURE SENSOR */
+    /* D49 */               MAKE_PIN(PD, 10, HAS_EXT),            /* INT2 FOR PRESSURE SENSOR */
+
+    /* SPI or SERIAL Internal Components */
+    /* D50 */               MAKE_PIN(PD, 6, HAS_EXT | HAS_SPI),   /* SPI FOR FLASH MEM, BLE */
+    /* D51 */               MAKE_PIN(PD, 7, HAS_EXT | HAS_SPI),
+    /* D52 */               MAKE_PIN(PD, 5, HAS_EXT | HAS_SPI),  
+    /* D53 */               MAKE_PIN(PB, 22, HAS_EXT | HAS_SPI),  /* SPI FOR OLED DISPLAY */ 
+    /* D54 */               MAKE_PIN(PB, 23, HAS_EXT | HAS_SPI),  /* RST FOR BLE */           
+    /* D55 */               MAKE_PIN(PB, 21, HAS_EXT | HAS_SPI),             
+    /* D56 */               MAKE_PIN(PD, 4, HAS_EXT),             /* CS FOR FLASH MEM & BLE */
+    /* D57 */               MAKE_PIN(PB, 20, HAS_EXT),            /* CS FOR OLED DISPLAY */
+    /* D58 */               MAKE_PIN(PE, 6, HAS_EXT),             /* RST FOR OLED DISPLAY*/
+    /* D59 */               MAKE_PIN(PD, 15, HAS_EXT),            /* D/C FOR OLED DISPLAY */
+    /* D60 */               MAKE_PIN(PE, 25, HAS_EXT | HAS_SER),  /* SERIAL FOR BLE - RX */
+    /* D61 */               MAKE_PIN(PE, 24, HAS_EXT | HAS_SER),  /* SERIAL FOR BLE - TX */
+    /* D62 */               MAKE_PIN(PD, 14, HAS_EXT),            /* WKP FOR BLE */
+    /* D63 */               MAKE_PIN(PE, 26, HAS_EXT),            /* PB18 FOR BLE */
+
+    /* LEDs & VIBRO On Board */
+    /* D64 */               MAKE_PIN(PC, 8, HAS_EXT | HAS_PWM),   /* LED RED */
+    /* D65 */               MAKE_PIN(PD, 0, HAS_EXT | HAS_PWM),   /* LED GREEN */
+    /* D66 */               MAKE_PIN(PC, 9, HAS_EXT | HAS_PWM),   /* LED BLUE */
+    /* D67 */               MAKE_PIN(PB, 9, HAS_EXT),             /* VIBRO */
+
+    /* Power Management */
+    /* D68 */               MAKE_PIN(PC, 14, HAS_EXT),   /* BAT_SENSE_ENABLE */
+    /* D69 */               MAKE_PIN(PC, 12, HAS_EXT),   /* CHG_STATE_PIN */
+    /* D70 */               MAKE_PIN(PA, 29, HAS_EXT),   /* HEART BEAT POWER ON */
+    /* D71 */               MAKE_PIN(PC, 13, HAS_EXT),   /* OLED DISPLAY POWER ON */
+    /* D72 */               MAKE_PIN(PB, 12, HAS_EXT),   /* HUMID, AMBIENT LIGHT AND POWER ON */
+
+    /* USB SERIAL PORT */
+    /* D73 */               MAKE_PIN(PB, 16, HAS_EXT | HAS_SER),  /* RX */
+    /* D74 */               MAKE_PIN(PB, 17, HAS_EXT | HAS_SER),  /* TX */
+
+    /* ADC0SE16 FOR BAT_SENSE */
+    /* D75 */               MAKE_PIN(PE, 28, HAS_EXT | HAS_ADC),  
+    
+};
+
+const PinClass const _analogclass[] STORED = {
+    /* A0 */ MAKE_PIN_CLASS(0, 12, 0, 0),
+    /* A1 */ MAKE_PIN_CLASS(1, 15, 1, 0),
+    /* A2 */ MAKE_PIN_CLASS(12, 13, 0, 0),
+    /* A3 */ MAKE_PIN_CLASS(19, 12, 1, 0),
+    /* A4 */ MAKE_PIN_CLASS(20, 14, 1, 0),
+    /* A5 */ MAKE_PIN_CLASS(23, 13, 1, 0),
+    /* A6 */ MAKE_PIN_CLASS(30, 17, 1, 0),
+    /* A7 */ MAKE_PIN_CLASS(75, 16, 0, 0),
+  
+};
+
+const PinClass const _spiclass[] STORED = {
+    /* MOSI0 */ MAKE_PIN_CLASS(53, 2, 0, 2),  /* SPI2 ON CHIP */
+    /* MISO0 */ MAKE_PIN_CLASS(54, 2, 0, 2),
+    /* SCLK0 */ MAKE_PIN_CLASS(55, 2, 0, 2),
+    /* MOSI1 */ MAKE_PIN_CLASS(50, 1, 0, 7),  /* SPI1 ON CHIP */
+    /* MISO1 */ MAKE_PIN_CLASS(51, 1, 0, 7),
+    /* SCLK1 */ MAKE_PIN_CLASS(52, 1, 0, 7),
+    /* MOSI2 */ MAKE_PIN_CLASS(5, 0, 0, 2),   /* SPI0 ON CHIP - MicroBus */
+    /* MISO2 */ MAKE_PIN_CLASS(4, 0, 0, 2),
+    /* SCLK2 */ MAKE_PIN_CLASS(3, 0, 0, 2),
+    /* MOSI3 */ MAKE_PIN_CLASS(26, 1, 0, 7),  /* SPI1 ON CHIP - MicroSD Slot */
+    /* MISO3 */ MAKE_PIN_CLASS(28, 1, 0, 7),
+    /* SCLK3 */ MAKE_PIN_CLASS(27, 1, 0, 2),
+    /* MOSI4 */ MAKE_PIN_CLASS(32, 0, 0, 2),  /* SPI0 ON CHIP - I2S Header */
+    /* MISO4 */ MAKE_PIN_CLASS(30, 0, 0, 2),
+    /* SCLK4 */ MAKE_PIN_CLASS(31, 0, 0, 2),
+   
+};
+
+const PinClass const _i2cclass[] STORED = { //I2C0/1 --> 2 | I2C2 --> 5
+    /* SDA0 */ MAKE_PIN_CLASS(37, 0, 0, 2),  /* I2C0 ON CHIP FOR HEART BEAT, AMBIENT LIGHT, HUMIDITY */
+    /* SCL0 */ MAKE_PIN_CLASS(38, 0, 0, 2),
+    /* SDA1 */ MAKE_PIN_CLASS(39, 1, 0, 2),  /* I2C1 ON CHIP FOR ACCELEROMETER, GYROSCOPE, PRESSURE */
+    /* SCL1 */ MAKE_PIN_CLASS(40, 1, 0, 2), 
+    /* SDA2 */ MAKE_PIN_CLASS(11, 0, 0, 2),  /* I2C0 ON CHIP - MicroBus Header */
+    /* SCL2 */ MAKE_PIN_CLASS(10, 0, 0, 2),
+    /* SDA3 */ MAKE_PIN_CLASS(35, 2, 0, 5),  /* I2C2 ON CHIP - I2S Header */
+    /* SCL3 */ MAKE_PIN_CLASS(33, 2, 0, 5),
+};
+
+
+//phys, timer, channel, afio
+const PinClass const _pwmclass[] STORED = {
+    /* PWM0 */ MAKE_PIN_CLASS(2, 0, 3, 4),
+    /* PWM1 */ MAKE_PIN_CLASS(3, 0, 2, 7),
+    /* PWM2 */ MAKE_PIN_CLASS(6, 2, 0, 3),
+    /* PWM3 */ MAKE_PIN_CLASS(7, 1, 1, 3),
+    /* PWM4 */ MAKE_PIN_CLASS(8, 3, 2, 4),
+    /* PWM5 */ MAKE_PIN_CLASS(9, 3, 3, 4),
+    /* PWM6 */ MAKE_PIN_CLASS(13, 2, 1, 3),
+    /* PWM7 */ MAKE_PIN_CLASS(14, 0, 2, 4),
+    /* PWM8 */ MAKE_PIN_CLASS(15, 2, 1, 3),
+    /* PWM9 */ MAKE_PIN_CLASS(21, 0, 1, 4),
+    /* PWM10 */ MAKE_PIN_CLASS(22, 0, 1, 3),
+    /* PWM11 */ MAKE_PIN_CLASS(34, 1, 0, 3),
+    /* PWM12 */ MAKE_PIN_CLASS(35, 1, 1, 3),
+    /* PWM13 */ MAKE_PIN_CLASS(36, 0, 2, 3),
+    /* PWM14 */ MAKE_PIN_CLASS(64, 3, 4, 4),
+    /* PWM15 */ MAKE_PIN_CLASS(65, 3, 0, 4),
+    /* PWM16 */ MAKE_PIN_CLASS(66, 3, 5, 3),    
+};
+
+
+const PinClass const _icuclass[] STORED = {
+    /* PWM0 */ MAKE_PIN_CLASS(2, 0, 3, 4),
+    /* PWM1 */ MAKE_PIN_CLASS(3, 0, 2, 7),
+    /* PWM2 */ MAKE_PIN_CLASS(6, 2, 0, 3),
+    /* PWM3 */ MAKE_PIN_CLASS(7, 1, 1, 3),
+    /* PWM4 */ MAKE_PIN_CLASS(8, 3, 2, 4),
+    /* PWM5 */ MAKE_PIN_CLASS(9, 3, 3, 4),
+    /* PWM6 */ MAKE_PIN_CLASS(13, 2, 1, 3),
+    /* PWM7 */ MAKE_PIN_CLASS(14, 0, 2, 4),
+    /* PWM8 */ MAKE_PIN_CLASS(15, 2, 1, 3),
+    /* PWM9 */ MAKE_PIN_CLASS(21, 0, 1, 4),
+    /* PWM10 */ MAKE_PIN_CLASS(22, 0, 1, 3),
+    /* PWM11 */ MAKE_PIN_CLASS(34, 1, 0, 3),
+    /* PWM12 */ MAKE_PIN_CLASS(35, 1, 1, 3),
+    /* PWM13 */ MAKE_PIN_CLASS(36, 0, 2, 3),   
+};
+
+const PinClass const _canclass[] STORED = {
+};
+
+// alternate function in DATA0, number UART in DATA2
+const PinClass const _serclass[] STORED = {
+    /* RX0 */ MAKE_PIN_CLASS(73, 3, 0, 0),   /* UART0 ON CHIP - USB PORT */
+    /* TX0 */ MAKE_PIN_CLASS(74, 3, 0, 0),
+    /* RX1 */ MAKE_PIN_CLASS(60, 3, 0, 4),   /* UART4 ON CHIP FOR BLE */
+    /* TX1 */ MAKE_PIN_CLASS(61, 3, 0, 4),
+    /* RX2 */ MAKE_PIN_CLASS(8, 3, 0, 2),    /* UART2 ON CHIP - MicroBus1 */
+    /* TX2 */ MAKE_PIN_CLASS(9, 3, 0, 2),
+    /* RX3 */ MAKE_PIN_CLASS(17, 3, 0, 3),   /* UART3 ON CHIP - MicroBus2 */
+    /* TX3 */ MAKE_PIN_CLASS(18, 3, 0, 3),
+    /* RX4 */ MAKE_PIN_CLASS(33, 3, 0, 0),   /* UART0 ON CHIP - I2S Header */
+    /* TX4 */ MAKE_PIN_CLASS(31, 3, 0, 0),
+};
+
+const PinClass const _dacclass[] STORED = {
+};
+
+const PinClass const _ledclass[] STORED = {
+    /* LED0 */ MAKE_PIN_CLASS(64, 0, 0, 0),
+    /* LED1 */ MAKE_PIN_CLASS(65, 0, 0, 0),
+    /* LED2 */ MAKE_PIN_CLASS(66, 0, 0, 0),
+    /* LED3 */ MAKE_PIN_CLASS(34, 0, 0, 0),
+    /* LED4 */ MAKE_PIN_CLASS(35, 0, 0, 0),
+    /* LED5 */ MAKE_PIN_CLASS(33, 0, 0, 0),
+   
+};
+
+const PinClass const _btnclass[] STORED = {
+    /* BTN0 */ MAKE_PIN_CLASS(34, 0, 0, 0),
+    /* BTN1 */ MAKE_PIN_CLASS(35, 0, 0, 0),
+    /* BTN2 */ MAKE_PIN_CLASS(33, 0, 0, 0)
+};

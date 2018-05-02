@@ -1,0 +1,6 @@
+{
+    "organization": "my-org",
+    "device_id": "my-devid",
+    "device_type": "my-devtype",
+    "auth_token": "token"
+}

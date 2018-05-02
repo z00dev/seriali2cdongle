@@ -1,0 +1,22 @@
+{
+    "dependencies": {},
+    "description": "Eseye AnyNet AWS support",
+    "fullname": "lib.eseye.anynetaws",
+    "git_pointer": "zerynth://zerynth-libs/eseye-anynetaws",
+    "info": {
+        "chip_manufacturer": "Eseye",
+        "chip_name": "-",
+        "name": "Zerynth Eseye AnyNet AWS Library",
+        "type": "IoT Cloud"
+    },
+    "keywords": [
+        "aws",
+        "iot",
+        "eseye",
+        "anynet"
+    ],
+    "repo": "official",
+    "title": "Eseye AnyNet AWS Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

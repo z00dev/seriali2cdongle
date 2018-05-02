@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.bossac": "r2.1.1",
+        "vhal.zerynth.armcmx_atmelsam3x": "r2.1.1"
+    },
+    "description": "Add support for Arduino Due",
+    "fullname": "board.zerynth.arduino_due",
+    "git_pointer": "zerynth://zerynth-boards/arduino_due",
+    "info": {
+        "board": "Arduino Due",
+        "chip_manufacturer": "Microchip/Atmel",
+        "device": "sam3x8",
+        "family_type": "ARM Cortex M3"
+    },
+    "keywords": [
+        "arduino",
+        "board",
+        "atmel",
+        "microchip"
+    ],
+    "repo": "official",
+    "title": "Arduino Due Support Package",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}
