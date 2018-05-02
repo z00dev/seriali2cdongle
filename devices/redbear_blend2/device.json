@@ -1,0 +1,34 @@
+{
+    "name":"RedBear Blend 2",
+    "target":"redbear_blend2",
+    "cc":"armgcc",
+    "classes":["redbear_blend2.RedBearBlend2"],
+    "ram":64,
+    "flash":512,
+    "family_type":"armcmx",
+    "family_name":"nrf52",
+    "chip_model":"NRF52832",
+    "manual_reset": 1,
+    "preferred_baud":115200,
+    "board_producer":"RedBear",
+    "chip_manifacturer":"Nordic",
+    "architecture":"cortex-m4f",
+    "gccopts":{
+        "cflags": ["-mcpu=cortex-m4","-mthumb", "-Os","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99"],
+        "defs": ["VM_DEFAULT_THREAD_SIZE=1024"]
+    },
+    "relocator":"cortex-m",
+    "type":"board",
+    "virtualizable":"RedBearBlend2",
+    "uplink_reset": true,
+    "reset_time": 2000,
+    "has_alter_ego":false,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

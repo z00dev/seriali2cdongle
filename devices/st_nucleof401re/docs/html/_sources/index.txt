@@ -1,0 +1,98 @@
+.. _st_nucleo:
+
+ST Microlectronics Nucleo F401RE
+=================================
+
+
+The STM32 Nucleo board provides an affordable and flexible way for users to try out new ideas and build prototypes with `STM32 microcontrollers <http://www.st.com/web/en/catalog/mmc/FM141/SC1169?sc=stm32>`_ . The Arduino™ connectivity support and ST Morpho headers make it easy to expand the functionality of the STM32 Nucleo board with a wide choice of specialized shields and sensors. The STM32 Nucleo board does not require any separate probe as it integrates the ST-LINK/V2-1 debugger/programmer. 
+
+.. figure:: /custom/img/StNucleo.jpg
+   :align: center
+   :figwidth: 400 
+   :alt: St Nucleo Board
+
+   
+*St Microelectronics Nucleo F401RE. Copyright st.com*
+
+
+**Very Important:** ST Nucleo uploader requires a firmware upgrade to properly work with ZERYNTH and with other serial terminal. ST-Link firmware can be upgraded following the `ST official procedure <https://developer.mbed.org/teams/ST/wiki/Nucleo-Firmware>`_.
+
+**Warning:** Unlike other Arduino-like boards, the ST Nucleo board runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin could damage the board.
+
+**Note:** all the reported information are extracted from the official `ST Nucelo F401RE reference page <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF260000?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF401RE-pr>`_, visit this page for more details and updates.
+
+
+ZERYNTH Pin Mapping and Associated Features 
+********************************************
+
+.. figure:: /custom/img/StNucleoPin.png
+   :align: center
+   :figwidth: 700 
+   :alt: St Nucleo Pin Map
+
+
+ST Nucleo Official Schematic, Reference Design and Pin Mapping are available on the official `ST Nucelo F401RE documentation page <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF260000?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF401RE-pr>`_
+
+ZERYNTH Flash Layout
+********************
+
+The internal flash of the ST Nucleo F401RE is organized into sectors of different size according to the following table:
+
+=============  =======  =================
+Start address  Size      Content
+=============  =======  =================
+  0x8000000      16Kb   Virtual Machine
+  0x8004000      16Kb   Virtual Machine
+  0x8008000      16Kb   Virtual Machine
+  0x800C000      16Kb   Virtual Machine
+  0x8010000      64Kb   Virtual Machine 
+  0x8020000     128kb   Bytecode Bank 0
+  0x8040000     128kb   Bytecode Bank 1
+  0x8060000     128kb   Bytecode Bank 2
+=============  =======  =================
+
+
+If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 2) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
+
+
+Board Summary
+**************
+
+* Microcontroller: STM32F401RET6 ARM®32-bit Cortex®-M4 CPU
+* Operating Voltage: 3.3V
+* Input Voltage: 7-12V
+* Digital I/O Pins (DIO): 50 
+* Analog Input Pins (ADC): 16
+* Analog Outputs Pins (DAC): 0
+* UARTs: 3
+* SPIs: 3
+* I2Cs: 3
+* CANs: 0
+* Flash Memory: 512 KB 
+* SRAM: 96 KB
+* Clock Speed: 84 MHz
+* Size (LxW mm):82.5 x 70.0 
+
+Power
+*******
+
+On the ST Nucleo the power supply is provided either by the host PC through the USB cable, or by an external Source: VIN (7V-12V), E5V (5V) or +3V3 power supply pins on CN6 or CN7. In case VIN, E5V or +3V3 is used to power the Nucleo board, using an external power supply unit or an auxiliary equipment, this power source must comply with the standard EN-60950-1: 2006+A11/2009, and must be Safety Extra Low Voltage (SELV) with limited power capability.
+
+The ST-LINK/V2-1 supports USB power management allowing to request more than 100 mA current to the host PC. All parts of the STM32 Nucleo board and shield can be powered from the ST-LINK USB connector CN1 (U5V or VBUS). Note that during the USB enumeration, the STM32 Nucleo board requires 300 mA of current to the Host PC. If the host is able to provide the required power, the targeted STM32 microcontroller is powered and the red LED 3 is turned ON, thus the STM32 Nucleo board and its shield can consume a maximum of 300 mA current, not more. 
+
+When the board is power supplied by USB (U5V) a jumper must be connected between pin 1 and pin 2 of JP5. The jumper must be connected between pin 2 and pin 3 if external power sources are used. 
+
+
+Connect, Virtualize and Program
+**************************************
+The ST Nucleo Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, Windows machines requires drivers that can be downloaded from `the ST Nucleo download page <https://developer.mbed.org/teams/ST/wiki/ST-Link-Driver>`_, while MAC OS X and Linux machines will recognize the board automatically. 
+
+The St-Link is also connected to the STM32 hardware UART0 also connected with pins RX0 and TX0 available on the Arduino headers. 
+
+Once connected on a USB port, if drivers have been correctly installed the ST Nucleo board is recognized by the ZERYNTH IDE and listed in the **Board Management Toolbar**. The ST Nucleo can be Viperized by clicking the Virtualize button without requiring any other user interventions. Once virtualized the Nucleo prints on the serial port the installed Virtual Machine version. To test it, just open the ZERYNTH IDE serial console and reset the board through the dedicated button. The VM version will be printed on the console.
+After 5 seconds the board also prints the "KO" message. This means that the ZERYNTH VM is started and the ZERYNTH bytecode execution started.
+
+ZERYNTH scripts can be uploaded on virtualized ST Nucleo by clicking the dedicated upload button available on the **Current Project** panel of the IDE. After that the IDE will notify the user to reset the board. Do this by clicking the reset button on the board (the black button). If the reset is not performed within 5 seconds the upload procedure fails.
+
+**Note:** *Scripts uploading and serial console connection issues have been reported with St Nucleo boards. If the upload fails also with a correctly performed reset or if the board is not able to print on the console, disconnect the board from the USB port and plug it again on another USB socket.* 
+

@@ -1,0 +1,35 @@
+{
+    "name":"Xplained Pro SAM D21",
+    "target":"xplained_d21",
+    "cc":"armgcc",
+    "classes":["xplained_d21.XplainedProSamD21"],
+    "ram":32,
+    "flash":256,
+    "family_type":"armcmx",
+    "family_name":"atmelsamd21",
+    "chip_model":"SAMD21",
+    "manual_reset": 1,
+    "preferred_baud":115200,
+    "board_producer":"Atmel",
+    "chip_manifacturer":"Atmel",
+    "architecture":"cortex-m0plus",
+    "gccopts":{
+        "cflags": ["-mcpu=cortex-m0plus","-mthumb", "-O2","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99"],
+        "defs": ["__ATSAMD21J18A__","SAMD21_VHAL","VM_DEFAULT_THREAD_SIZE=1024"]
+    },
+    "relocator":"cortex-m",
+    "type":"board",
+    "virtualizable":"XplainedProSamD21",
+    "uplink_reset": true,
+    "reset_time": 2000,
+    "vm_mini_chunk":64,
+    "has_alter_ego":false,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

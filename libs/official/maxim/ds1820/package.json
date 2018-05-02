@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Driver for Maxim DS1820/DS18S20 Onewire Temperature Sensors",
+    "fullname": "lib.maxim.ds1820",
+    "git_pointer": "zerynth://zerynth-libs/maxim-ds1820",
+    "info": {
+        "chip_manufacturer": "Maxim",
+        "chip_name": "DS1820/DS18S20",
+        "name": "Temperature Sensor",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "temperature",
+        "onewire",
+        "maxim"
+    ],
+    "repo": "official",
+    "title": "Maxim DS1820 and DS18S20",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

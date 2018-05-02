@@ -1,0 +1,77 @@
+.. _nodemcu2:
+
+NodeMCU v2
+==========
+
+
+NodeMCU is an open source IoT platform including a firmware which runs on the ESP8266 with the Espressif Non-OS SDK, and hardware based on the ESP-12 module. The board features 4MB of SPI flash, 80MHz of system clock, around 50k of usable RAM and an on chip Wifi Transceiver.
+
+
+.. figure:: /custom/img/nodemcu2.jpg
+   :align: center
+   :figwidth: 400 
+   :alt: NodeMCU v2
+
+   
+
+ZERYNTH Pin Mapping
+*******************
+
+.. figure:: /custom/img/nodemcu2pin.png
+   :align: center
+   :figwidth: 700 
+   :alt: NodeMCU v2
+
+Official reference for NodeMCU can be found `here <http://nodemcu.com/index_en.html>`_.
+
+ZERYNTH VM Details
+******************
+
+The internal flash of NodeMCU can be organized  in different ways. The current VM is a non-FOTA VM with the VM code beginning at 0x0000, followed by the esp8266 ir0m image at 0x20000 and the esp_init_data at 0x3fc000. The VM is based on the Espressif RTOS SDK 1.4.1.
+
+
+
+ESP8266 Wifi Support
+********************
+
+The Wifi chip of the NodeMCU can be used by installing lib.espressif.esp8266wifi and using it like this: ::
+
+    import streams
+
+    # import the wifi interface
+    from wireless import wifi
+
+    # import wifi support
+    from espressif.esp8266wifi import esp8266wifi as wifi_driver
+
+    streams.serial()
+
+    # init the wifi driver!
+    # The driver automatically registers itself to the wifi interface
+    # with the correct configuration for the selected board
+    wifi_driver.auto_init()
+
+    # use the wifi interface to link to the Access Point
+    # change network name, security and password as needed
+    print("Establishing Link...")
+    try:
+        # FOR THIS EXAMPLE TO WORK, "Network-Name" AND "Wifi-Password" MUST BE SET
+        # TO MATCH YOUR ACTUAL NETWORK CONFIGURATION
+        wifi.link("Network-name",wifi.WIFI_WPA2,"password")
+    except Exception as e:
+        print("ooops, something wrong while linking :(", e)
+        while True:
+            sleep(1000)
+
+
+
+
+
+
+Connect, Virtualize and Program
+*******************************
+
+The NodeMCU v2 exposes the serial port of the ESP8266 module via a CP2102 usb bridge whcih is also connected to the boot pins of the module, allowing for a seamless virtualization of the board. Drivers for the bridge can be downloaded `here <https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>`_ and are needed for Windows and Mac.
+
+
+Once recognized by the Studio, the virtualization of the board and the uplinking of the bytecode do not require manual resetting of the hardware.

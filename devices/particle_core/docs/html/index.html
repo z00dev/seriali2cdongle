@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Particle Core (Formerly Spark Core) &mdash; Particle Core 0.3.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/zerynth.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Particle Core 0.3.0 documentation" href="#"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="#" class="fa fa-home"> Particle Core</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Particle Core (Formerly Spark Core)</a><ul>
+<li><a class="reference internal" href="#zerynth-pin-mapping-and-associated-features">ZERYNTH Pin Mapping and Associated Features</a></li>
+<li><a class="reference internal" href="#board-summary">Board Summary</a></li>
+<li><a class="reference internal" href="#power">Power</a></li>
+<li><a class="reference internal" href="#connect-virtualize-and-program">Connect, Virtualize and Program</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Particle Core</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>Particle Core (Formerly Spark Core)</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="particle-core-formerly-spark-core">
+<span id="spark-v2"></span><h1>Particle Core (Formerly Spark Core)<a class="headerlink" href="#particle-core-formerly-spark-core" title="Permalink to this headline">¶</a></h1>
+<p>The Particle Core is a complete Wi-Fi enabled development platform for creating connected devices with ease. The Particle Core is small, low power, and does all the heavy WiFi lifting.
+Particle Core v1.0 uses the <a class="reference external" href="https://github.com/spark/core/blob/master/Datasheets/ST_STM32F103CB.pdf">STM32F103CB Cortex M3  microcontroller</a>.</p>
+<div class="figure align-center" style="width: 400px">
+<img alt="Particle Core Board" src="_images/ParticleCore.jpg" />
+</div>
+<p><em>Particle Core. Copyright particle.io</em></p>
+<p>In addition to having 128KB of internal flash memory for storing the firmware, the Core also features an external SPI based flash memory chip - SST25VF016B. This memory space (a total of 2MB) is used to store the factory reset firmware and a back up firmware. Part of the space is also available to the user who can use it to store log data, user parameters, etc.</p>
+<p><strong>Note:</strong> all the reported information are extracted from the official <a class="reference external" href="http://docs.particle.io/core/">Particle Core reference page</a>, visit this page for more details and updates.</p>
+<div class="section" id="zerynth-pin-mapping-and-associated-features">
+<h2>ZERYNTH Pin Mapping and Associated Features<a class="headerlink" href="#zerynth-pin-mapping-and-associated-features" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" style="width: 700px">
+<img alt="Particle Core Pin Map" src="_images/ParticleCorePin.png" />
+</div>
+<p>Particle Core Official Schematic, Reference Design &amp; Pin Mapping are available on the <a class="reference external" href="http://docs.particle.io/core/">official Particle Core reference page</a>.</p>
+</div>
+<div class="section" id="board-summary">
+<h2>Board Summary<a class="headerlink" href="#board-summary" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Microcontroller: ARM 32-bit Cortex™-M3 CPU Core</li>
+<li>Operating Voltage: 3.3V</li>
+<li>Input Voltage: 3.6-6V</li>
+<li>Digital I/O Pins (DIO): 18</li>
+<li>Analog Input Pins (ADC): 8</li>
+<li>Analog Outputs Pins (DAC): 0</li>
+<li>UARTs: 1</li>
+<li>SPIs: 1</li>
+<li>I2Cs: 1</li>
+<li>CANs: 0</li>
+<li>Flash Memory: 128KB</li>
+<li>SRAM: 20 KB</li>
+<li>Clock Speed: 72Mhz</li>
+<li>Size (LxW mm): 37.33 X 20.32</li>
+</ul>
+</div>
+<div class="section" id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p>The entire Core, including all of the on board peripherals run at 3.3V DC. The Core has internal voltage regulator that allows powering the board from the USB port or through an external power supply that can range from 3.6V to 6.0V DC. Ideal sources of power can be: 3.6V LiPo battery, 4AA battery pack, backup USB battery or an USB wall charger.</p>
+</div>
+<div class="section" id="connect-virtualize-and-program">
+<h2>Connect, Virtualize and Program<a class="headerlink" href="#connect-virtualize-and-program" title="Permalink to this headline">¶</a></h2>
+<p>On Windows machines the <a class="reference external" href="https://s3.amazonaws.com/spark-website/Spark.zip">Particle Core USB Drivers</a> are required by the ZERYNTH IDE for accessing the Core serial port establishing a connection with the STM32 UART.</p>
+<p>To install the drivers on Windows plug the Core on an USB port, unzip the downloaded package, go to the Windows Devices Manager and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named spark_core).</p>
+<p>It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Core driver installation. There are good instructions on how to do that in <a class="reference external" href="http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/">this guide</a>.</p>
+<p>On MAC OS X and Linux USB drivers are not required.</p>
+<p>In Linux however the following udev rules may need to be added:</p>
+<div class="highlight-python"><div class="highlight"><pre>#Particle Core
+SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;1d50&quot;, ATTRS{idProduct}==&quot;607f&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;tty&quot;, ATTRS{idVendor}==&quot;1d50&quot;, ATTRS{idProduct}==&quot;607f&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;1d50&quot;, ATTRS{idProduct}==&quot;607d&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;tty&quot;, ATTRS{idVendor}==&quot;1d50&quot;, ATTRS{idProduct}==&quot;607d&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+</pre></div>
+</div>
+<p>Once connected on a USB port, if drivers have been correctly installed, the Core can be seen as Virtual Serial port and it is automatically recognized by the ZERYNTH IDE and listed in the <strong>Boards Management Toolbar</strong> as <em>Particle Core Virtualizable</em> if never virtualized before, while <em>Particle Core virtualized</em> if already loaded with a ZERYNTH Virtual Machine.</p>
+<p>To virtualize the Core or to update the ZERYNTH VM installed on it, it is necessary to put the Core in DFU Mode (Device Firmware Upgrade) as reported in the official <a class="reference external" href="http://docs.particle.io/core/modes/">Particle Core Guide</a> .
+<strong>Note:</strong> On Windows machines it is necessary to install also the Core DFU drivers for virtualizeing the board. The official Particle Core DFU driver and the related installation procedure are reported <a class="reference external" href="https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518">here</a> .</p>
+<p>Follow these steps to virtualize a Particle Core:</p>
+<ul class="simple">
+<li>Hold down BOTH buttons</li>
+<li>Release only the RST button, while holding down the MODE button</li>
+<li>Wait for the LED to start flashing yellow</li>
+<li>Release the MODE button</li>
+<li>The Core is now in DFU Mode</li>
+<li>Select the Core on the Board Management Toolbar and click virtualize</li>
+<li><strong>The Core is now virtualized, check it on the Board Management Toolbar</strong></li>
+<li>Depending on the Particle Core bootloader version, it may be necessary to virtualize the core twice. If after the first viperization, the Core starts blinking red (factory reset mode), don&#8217;t worry: wait for the factory reset to finish and repeat from step one.</li>
+</ul>
+<p>Follow these steps to upload a ZERYNTH script on a virtualized Core:</p>
+<ul class="simple">
+<li>Select the virtualized Core on the Board Bar List</li>
+<li>Click upload</li>
+<li>Reset the Core by pressing the RST button</li>
+<li><strong>The script is now running on the Core</strong></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright ZERYNTH Team.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ <script type="text/javascript">
+ var vurl
+ if(location.href.indexOf("127.0.0.1")>=0) vurl=location.protocol+"//"+location.host+"/docs"
+ else vurl="http://doc.zerynth.com"
+ $(document).ready(function(){
+                   $('.wy-breadcrumbs a:contains("Docs")').before('<a href="'+vurl+'">Zerynth</a> &#187;')
+                   $('.wy-side-nav-search > a').removeClass("fa-home").removeClass("fa")
+                   $('.wy-side-nav-search').prepend('<div class="viper-circle"><a href="'+vurl+'"><span style="color:#1c5e60" class="zerynth-Logo2"></span></a></div>')
+ })
+ </script>
+
+
+</body>
+</html>

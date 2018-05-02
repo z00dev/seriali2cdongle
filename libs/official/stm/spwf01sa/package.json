@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Driver for ST SPWF01SA",
+    "fullname": "lib.stm.spwf01sa",
+    "git_pointer": "zerynth://zerynth-libs/stm-spwf01sa",
+    "info": {
+        "chip_manufacturer": "ST Microelectronics",
+        "chip_name": "SPWF01SA",
+        "name": "Wi-Fi Driver",
+        "type": "Connectivity"
+    },
+    "keywords": [
+        "wireless",
+        "wifi",
+        "stm"
+    ],
+    "repo": "official",
+    "title": "ST SPWF01SA wifi solution",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

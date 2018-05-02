@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Particle Electron &mdash; Particle Electron r1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/zerynth.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Particle Electron r1.0.0 documentation" href="#"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="#" class="fa fa-home"> Particle Electron</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Particle Electron</a><ul>
+<li><a class="reference internal" href="#zerynth-pin-mapping-and-associated-features">ZERYNTH Pin Mapping and Associated Features</a></li>
+<li><a class="reference internal" href="#board-summary">Board Summary</a></li>
+<li><a class="reference internal" href="#power">Power</a></li>
+<li><a class="reference internal" href="#connect-virtualize-and-program">Connect, Virtualize and Program</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Particle Electron</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>Particle Electron</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="particle-electron">
+<span id="id1"></span><h1>Particle Electron<a class="headerlink" href="#particle-electron" title="Permalink to this headline">¶</a></h1>
+<p>The Particle Electron is a GSM enabled development platform for creating connected devices with M2M in mind.
+Particle Electron combines a powerful ARM Cortex M3 micro-controller with a 3G/2G gsm module from UBlox (U260 or G350).
+Particle Electron uses the <a class="reference external" href="https://www.particle.io/products/hardware/electron-cellular-dev-kit">STM32F205RG Cortex M3  microcontroller</a>.</p>
+<div class="figure align-center" style="width: 400px">
+<img alt="Particle Electron Board" src="_images/ParticleElectron.jpg" />
+</div>
+<p><em>Particle Electron. Copyright particle.io</em></p>
+<p>In addition to having 1Mb of internal flash memory for storing the firmware, the Electron also features 128k of Ram and 120 MHz of clock.</p>
+<p><strong>Note:</strong> all the reported information are extracted from the official <a class="reference external" href="http://docs.particle.io/electron/">Particle Electron reference page</a>, visit this page for more details and updates.</p>
+<div class="section" id="zerynth-pin-mapping-and-associated-features">
+<h2>ZERYNTH Pin Mapping and Associated Features<a class="headerlink" href="#zerynth-pin-mapping-and-associated-features" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" style="width: 700px">
+<img alt="Particle Electron Pin Map" src="_images/ParticleElectronPin.png" />
+</div>
+<p>Particle Electron Official Schematic, Reference Design &amp; Pin Mapping are available on the <a class="reference external" href="http://docs.particle.io/electron/">official Particle Electron reference page</a>.</p>
+</div>
+<div class="section" id="board-summary">
+<h2>Board Summary<a class="headerlink" href="#board-summary" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Microcontroller: ARM 32-bit Cortex™-M3 CPU Core</li>
+<li>Operating Voltage: 3.3V</li>
+<li>Input Voltage: 3.6-6V</li>
+<li>Digital I/O Pins (DIO): 28</li>
+<li>Analog Input Pins (ADC): 14</li>
+<li>Analog Outputs Pins (DAC): 1</li>
+<li>UARTs: 5</li>
+<li>SPIs: 2</li>
+<li>I2Cs: 1</li>
+<li>CANs: 1</li>
+<li>Flash Memory: 1Mb</li>
+<li>SRAM: 128 KB</li>
+<li>Clock Speed: 120Mhz</li>
+</ul>
+</div>
+<div class="section" id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p>The Electron is equipped with on board power management circuit powered by BQ24195 pm unit and MAX17043 fuel gauge. The Electron can be powered via the VIN (3.9V-12VDC) pin, the USB Micro B connector or a LiPo battery. When powered from a LiPo battery alone, the power management IC switches off the internal regulator and supplies power to the system directly from the battery.</p>
+</div>
+<div class="section" id="connect-virtualize-and-program">
+<h2>Connect, Virtualize and Program<a class="headerlink" href="#connect-virtualize-and-program" title="Permalink to this headline">¶</a></h2>
+<p>On Windows machines the <a class="reference external" href="https://docs.particle.io/guide/getting-started/connect/electron/#installing-the-particle-driver">Particle Electron USB Drivers</a> are required by the ZERYNTH IDE for accessing the  serial port establishing a connection with the STM32 UART.</p>
+<p>To install the drivers on Windows plug the Electron on an USB port, unzip the downloaded package, go to the Windows Devices Manager and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named photon.cat).</p>
+<p>It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Electron driver installation. There are good instructions on how to do that in <a class="reference external" href="http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/">this guide</a>.</p>
+<p>On MAC OS X and Linux USB drivers are not required.</p>
+<p>In Linux however the following udev rules may need to be added:</p>
+<div class="highlight-python"><div class="highlight"><pre>#Particle Electron
+SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;2b04&quot;, ATTRS{idProduct}==&quot;d00a&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;tty&quot;, ATTRS{idVendor}==&quot;2b04&quot;, ATTRS{idProduct}==&quot;d00a&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;2b04&quot;, ATTRS{idProduct}==&quot;c00a&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;tty&quot;, ATTRS{idVendor}==&quot;2b04&quot;, ATTRS{idProduct}==&quot;c00a&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+</pre></div>
+</div>
+<p>Once connected on a USB port, if drivers have been correctly installed, the Electron can be seen as Virtual Serial port and it is automatically recognized by the ZERYNTH IDE and listed in the <strong>Boards Management Toolbar</strong> as <em>Particle Electron virtualizable</em> if never virtualized before, or as <em>Particle Electron virtualized</em> if already flashed with a ZERYNTH Virtual Machine.</p>
+<p>To virtualize an Electron or to update the ZERYNTH VM installed on it, it is necessary to put the Electron in DFU Mode (Device Firmware Upgrade) as reported in the official <a class="reference external" href="http://docs.particle.io/electron">Particle Electron Guide</a> .
+<strong>Note:</strong> On Windows machines it is necessary to install also the Electron DFU drivers for virtualizing the board. The official Particle Core DFU driver and the related installation procedure are reported <a class="reference external" href="https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518">here</a> but they also work for the Electron.</p>
+<p>Follow these steps to virtualize a Particle Electron:</p>
+<ul class="simple">
+<li>Ensure that your Particle Electron has been connected at least once to the Particle Cloud and has downloaded the latest firmware</li>
+<li>Hold down BOTH buttons</li>
+<li>Release only the RST button, while holding down the SETUP button</li>
+<li>Wait for the LED to start flashing magenta, then yellow</li>
+<li>Release the SETUP button</li>
+<li>The Electron is now in DFU Mode (yellow blinking led)</li>
+<li>Select the Electron on the Board Management Toolbar and click virtualize</li>
+<li><strong>The Electron is now virtualized, check it on the Board Management Toolbar</strong></li>
+</ul>
+<p>Follow these steps to upload a ZERYNTH script on a virtualized Electron:</p>
+<ul class="simple">
+<li>Select the virtualized Electron on the Board Bar List</li>
+<li>Click upload</li>
+<li>Reset the Electron by pressing the RST button when asked</li>
+<li><strong>The script is now running on the Electron</strong></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright ZERYNTH Team.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'r1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ <script type="text/javascript">
+ var vurl
+ if(location.href.indexOf("127.0.0.1")>=0) vurl=location.protocol+"//"+location.host+"/docs"
+ else vurl="http://doc.zerynth.com"
+ $(document).ready(function(){
+                   $('.wy-breadcrumbs a:contains("Docs")').before('<a href="'+vurl+'">Zerynth</a> &#187;')
+                   $('.wy-side-nav-search > a').removeClass("fa-home").removeClass("fa")
+                   $('.wy-side-nav-search').prepend('<div class="viper-circle"><a href="'+vurl+'"><span style="color:#1c5e60" class="zerynth-Logo2"></span></a></div>')
+ })
+ </script>
+
+
+</body>
+</html>

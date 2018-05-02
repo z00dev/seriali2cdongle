@@ -1,0 +1,3 @@
+#Nxp
+    ##FXAS21002C
+		get_angular_velocity

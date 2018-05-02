@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Driver for BOSCH BMP180 I2C Digital Pressure and Temperature Sensor",
+    "fullname": "lib.bosch.bmp180",
+    "git_pointer": "zerynth://zerynth-libs/bosch-bmp180",
+    "info": {
+        "chip_manufacturer": "BOSCH",
+        "chip_name": "BMP180",
+        "name": "Pressure and Temperature Sensor",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "bosch",
+        "pressure",
+        "temperature"
+    ],
+    "repo": "official",
+    "title": "BMP180 Digital Pressure and Temperature Sensor",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

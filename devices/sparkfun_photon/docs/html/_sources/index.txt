@@ -1,0 +1,135 @@
+.. _particle_photon:
+
+Particle Photon
+===============
+
+The Particle Photon is a complete Wi-Fi enabled development platform for creating connected devices with ease, the successor of the Particle Core. Particle Photon combines a powerful ARM Cortex M3 micro-controller with a Broadcom Wi-Fi chip in a tiny thumbnail-sized module called the PØ (P-zero).
+Particle Photon uses the `STM32F205RG Cortex M3  microcontroller <http://docs.particle.io/photon/hardware/>`_.
+
+.. figure:: /custom/img/ParticlePhoton.jpg
+   :align: center
+   :figwidth: 400 
+   :alt: Particle Photon Board
+
+   
+*Particle Photon. Copyright particle.io*
+
+In addition to having 1Mb of internal flash memory for storing the firmware, the Photon also features 128k of Ram and 120 MHz of clock.
+
+**Note:** all the reported information are extracted from the official `Particle Photon reference page <http://docs.particle.io/photon/>`_, visit this page for more details and updates.
+
+
+ZERYNTH Pin Mapping and Associated Features 
+*********************************************
+
+.. figure:: /custom/img/ParticlePhotonPin.png
+   :align: center
+   :figwidth: 700 
+   :alt: Particle Photon Pin Map
+
+
+Particle Photon Official Schematic, Reference Design & Pin Mapping are available on the `official Particle Photon reference page <http://docs.particle.io/photon/>`_.
+
+
+ZERYNTH Flash Layout
+********************
+
+The internal flash of the Particle Photon is organized into sectors of different size according to the following table:
+
+=============  =======  =================
+Start address  Size      Content
+=============  =======  =================
+  0x8000000      16Kb   BootLoader
+  0x8004000      16Kb   DCT1
+  0x8008000      16Kb   DCT2
+  0x800C000      16Kb   EEPROM1 
+  0x8010000      64Kb   EEPROM2 
+  0x8020000     128kb   Virtual Machine
+  0x8040000     128kb   Bytecode Bank 0
+  0x8060000     128kb   Bytecode Bank 1
+  0x8080000     128kb   Bytecode Bank 2
+  0x80A0000     128kb   Bytecode Bank 3
+  0x80C0000     128kb   Bytecode Bank 4
+  0x80E0000     128kb   Bytecode Bank 5
+=============  =======  =================
+
+To avoid deleting the Photon configuration it is suggested to not write to sectors between 0x8004000 and 0x8020000.
+If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.
+
+
+Board Summary
+**************
+
+* Microcontroller: ARM 32-bit Cortex™-M3 CPU Core
+* Operating Voltage: 3.3V
+* Input Voltage: 3.6-6V
+* Digital I/O Pins (DIO): 18 
+* Analog Input Pins (ADC): 5
+* Analog Outputs Pins (DAC): 1
+* UARTs: 1
+* SPIs: 2
+* I2Cs: 1
+* CANs: 1
+* Flash Memory: 1Mb 
+* SRAM: 128 KB
+* Clock Speed: 120Mhz
+* Size (LxW mm): 36.58 X 20.32  
+
+Power
+*******
+Power to the Photon is supplied via the on-board USB Micro B connector or directly via the VIN pin. If power is supplied directly to the VIN pin, the voltage should be regulated between 3.6VDC and 5.5VDC. When the Photon is powered via the USB port, VIN will output a voltage of approximately 4.8VDC due to a reverse polarity protection series schottky diode between V+ of USB and VIN. When used as an output, the max load on VIN is 1A.
+Typical current consumption is 80mA with a 5V input. Deep sleep quiescent current is 160uA. When powering the Photon from the USB connector, make sure to use a quality cable to minimize voltage drops. If a high resistance cable (i.e., low current) is used, peak currents drawn from the Photon when transmitting and receiving will result in voltage sag at the input which may cause a system brown out or intermittent operation. Likewise, the power source should be sufficient enough to source 1A of current to be on the safe side.
+
+
+Connect, Virtualize and Program
+**************************************
+On Windows machines the `Particle Photon USB Drivers <https://s3.amazonaws.com/spark-website/Spark.zip>`_ are required by the ZERYNTH IDE for accessing the  serial port establishing a connection with the STM32 UART.
+
+To install the drivers on Windows plug the Photon on an USB port, unzip the downloaded package, go to the Windows Devices Manager and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named photon.cat).
+
+It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Photon driver installation. There are good instructions on how to do that in `this guide <http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/>`_.
+
+On MAC OS X and Linux USB drivers are not required.
+
+In Linux however the following udev rules may need to be added: ::
+	
+	#Particle Photon    
+	SUBSYSTEMS=="usb", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="d006", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+	SUBSYSTEMS=="tty", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="d006", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+	SUBSYSTEMS=="usb", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="c006", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+	SUBSYSTEMS=="tty", ATTRS{idVendor}=="2b04", ATTRS{idProduct}=="c006", MODE="0666", GROUP="users", ENV{ID_MM_DEVICE_IGNORE}="1"
+
+
+Once connected on a USB port, if drivers have been correctly installed, the Photon can be seen as Virtual Serial port and it is automatically recognized by the ZERYNTH IDE and listed in the **Boards Management Toolbar** as *Particle Photon virtualizable* if never virtualized before, or as *Particle Photon virtualized* if already flashed with a ZERYNTH Virtual Machine. 
+
+To virtualize a Photon or to update the ZERYNTH VM installed on it, it is necessary to put the Photon in DFU Mode (Device Firmware Upgrade) as reported in the official `Particle Photon Guide <http://docs.particle.io/photon/modes/>`_ . 
+**Note:** On Windows machines it is necessary to install also the Photon DFU drivers for virtualizeing the board. The official Particle Core DFU driver and the related installation procedure are reported `here <https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518>`_ but they also work for the Photon.
+
+Follow these steps to virtualize a Particle Photon:
+
+* Ensure that your Particle Photon has been connected at least once to the Particle Cloud and has downloaded the latest firmware
+* Hold down BOTH buttons
+* Release only the RST button, while holding down the SETUP button
+* Wait for the LED to start flashing magenta, then yellow
+* Release the SETUP button
+* The Photon is now in DFU Mode (yellow blinking led)
+* Select the Photon on the Board Management Toolbar and click virtualize
+* **The Photon is now virtualized, check it on the Board Management Toolbar**
+
+Follow these steps to upload a ZERYNTH script on a virtualized Photon:
+
+* Select the virtualized Photon on the Board Bar List
+* Click upload
+* Reset the Photon by pressing the RST button when asked
+* **The script is now running on the Photon** 
+
+ZERYNTH overwrites the original Particle firmware, freeing almost 800Kb of flash to hold bytecode. To restore the Particle Photon to its original state, a factory reset is not enough. The ZERYNTH IDE is able to flash the original Particle firmware on the Photon from the virtualize dialog:
+
+* Put the Photon in DFU mode
+* Select the Photon on the Board Management Toolbar and click virtualize
+* From the dialog choose Restore Original Firmware
+* Do a factory reset and connect your Photon to the Particle Cloud to restore the latest firmware
+
+
+
+

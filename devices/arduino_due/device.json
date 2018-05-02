@@ -1,0 +1,34 @@
+{
+    "name":"Arduino Due",
+    "target":"arduino_due",
+    "cc":"armgcc",
+    "classes":["arduino_due.ArduinoDue"],
+    "ram":96,
+    "flash":512,
+    "family_type":"armcmx",
+    "family_name":"atmelsam3x",
+    "chip_model":"SAM3X8E",
+    "manual_reset": 0,
+    "preferred_baud":115200,
+    "board_producer":"Arduino",
+    "chip_manifacturer":"Atmel",
+    "architecture":"cortex-m3",
+    "gccopts":{
+        "cflags": ["-mcpu=cortex-m3","-mthumb", "-O2","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99"],
+        "defs": ["ATSAM3X8E","SAM3X_VHAL","VM_DEFAULT_THREAD_SIZE=1024"]
+    },
+    "relocator":"cortex-m",
+    "type":"board",
+    "virtualizable":"ArduinoDue",
+    "uplink_reset": false,
+    "has_alter_ego":false,
+    "fixed_timeouts":true,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":true
+    }
+}

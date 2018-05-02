@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "lib.ublox.g350": "r2.1.1",
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.dfu": "r2.1.1",
+        "vhal.zerynth.armcmx_stm32f2": "r2.1.1"
+    },
+    "description": "Add support for Particle Electron",
+    "fullname": "board.zerynth.particle_electron",
+    "git_pointer": "zerynth://zerynth-boards/particle_electron",
+    "info": {
+        "board": "Particle Electron",
+        "chip_manufacturer": "ST Microelectronics",
+        "device": "stm32f205",
+        "family_type": "ARM Cortex M3"
+    },
+    "keywords": [
+        "particle",
+        "board",
+        "gsm"
+    ],
+    "repo": "official",
+    "title": "Particle Electron Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

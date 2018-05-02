@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Driver Maxim DS1307 RTC",
+    "fullname": "lib.maxim.ds1307",
+    "git_pointer": "zerynth://zerynth-libs/maxim-ds1307",
+    "info": {
+        "chip_manufacturer": "Maxim",
+        "chip_name": "DS1307",
+        "name": "Real Time Clock",
+        "type": "Clock and Timing"
+    },
+    "keywords": [
+        "rtc",
+        "maxim",
+        "time"
+    ],
+    "repo": "official",
+    "title": "Maxim DS1307 Real Time Clock",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

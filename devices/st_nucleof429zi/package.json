@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "sys.zerynth.armgcc": "r2.1.1",
+        "vhal.zerynth.armcmx_stm32f4": "r2.1.1"
+    },
+    "description": "Add support for ST Nucleo F429ZI board",
+    "fullname": "board.zerynth.st_nucleof429zi",
+    "git_pointer": "zerynth://zerynth-boards/st_nucleof429zi",
+    "info": {
+        "board": "ST Nucleo F429ZI",
+        "chip_manufacturer": "ST Microelectronics",
+        "device": "stm32f429",
+        "family_type": "ARM Cortex M4"
+    },
+    "keywords": [
+        "board",
+        "nucleo",
+        "stm",
+        "f429zi"
+    ],
+    "repo": "official",
+    "title": "ST Nucleo F429ZI Support Package",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

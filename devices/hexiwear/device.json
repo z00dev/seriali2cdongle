@@ -1,0 +1,36 @@
+{
+    "name":"Hexiwear (Docking Station)",
+    "target":"hexiwear",
+    "cc":"armgcc",
+    "classes":["hexiwear.Hexiwear"],
+    "ram":256,
+    "flash":1024,
+    "family_type":"armcmx",
+    "family_name":"nxpk64",
+    "chip_model":"K64F12",
+    "manual_reset": 1,
+    "preferred_baud":115200,
+    "board_producer":"NXP",
+    "chip_manifacturer":"NXP",
+    "architecture":"cortex-m4f",
+    "gccopts":{
+        "cflags": ["-mcpu=cortex-m4","-mthumb", "-Os","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99"],
+        "defs": ["VM_DEFAULT_THREAD_SIZE=1024"]
+    },
+    "relocator":"cortex-m",
+    "type":"board",
+    "virtualizable":"Hexiwear",
+    "uplink_reset": true,
+    "reset_time": 2000,
+    "has_alter_ego":false,
+    "has_linked_devs":true,
+    "reset_after_register":true,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

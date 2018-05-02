@@ -1,0 +1,3 @@
+#ZerynthApp
+	Zerynth_App_Basic
+	Zerynth_App_Oscilloscope

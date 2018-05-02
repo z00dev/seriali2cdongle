@@ -1,0 +1,20 @@
+{
+    "dependencies": {},
+    "description": "Driver for Maxim DS2482 Onewire-I2C bridge",
+    "fullname": "lib.maxim.ds2482",
+    "git_pointer": "zerynth://zerynth-libs/maxim-ds2482",
+    "info": {
+        "chip_manufacturer": "Maxim",
+        "chip_name": "DS2482",
+        "name": "Onewire-I2C Bridge",
+        "type": "Interface"
+    },
+    "keywords": [
+        "maxim",
+        "onewire"
+    ],
+    "repo": "official",
+    "title": "Maxim DS2482 onewire bridge",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

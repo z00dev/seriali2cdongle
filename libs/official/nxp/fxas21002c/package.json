@@ -1,0 +1,22 @@
+{
+    "dependencies": {},
+    "description": "Driver for NXP FXAS21002C Gyroscope",
+    "fullname": "lib.nxp.fxas21002c",
+    "git_pointer": "zerynth://zerynth-libs/nxp-fxas21002c",
+    "info": {
+        "chip_manufacturer": "NXP",
+        "chip_name": "FXAS21002C",
+        "name": "Gyroscope",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "nxp",
+        "gyroscope",
+        "angular",
+        "velocity"
+    ],
+    "repo": "official",
+    "title": "NXP FXAS21002C Gyroscope",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

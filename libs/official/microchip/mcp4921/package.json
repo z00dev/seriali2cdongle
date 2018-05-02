@@ -1,0 +1,20 @@
+{
+    "dependencies": {},
+    "description": "Driver Microchip MCP4921 DAC",
+    "fullname": "lib.microchip.mcp4921",
+    "git_pointer": "zerynth://zerynth-libs/microchip-mcp4921",
+    "info": {
+        "chip_manufacturer": "Microchip",
+        "chip_name": "MCP4921",
+        "name": "Digital-to-Analog Converter",
+        "type": "Actuator"
+    },
+    "keywords": [
+        "dac",
+        "microchip"
+    ],
+    "repo": "official",
+    "title": "Microchip MCP4921 Digital-to-Analog Converter",
+    "version": "r2.1.1",
+    "whatsnew": "first release"
+}

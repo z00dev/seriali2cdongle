@@ -1,0 +1,77 @@
+{
+	"id":261,
+	"name":"Zerynth Example",
+	"protocol":"JsonSingleReferenceProtocol",
+	"description":"Environmental readings and LED control",
+	"feeds":[
+		{
+		    "id":410,
+		    "name":"Temperature",
+		    "reference":"T",
+            "unit":"℃",
+            "dataType":"NUMERIC",
+            "precision":1,
+            "size":1,
+            "delimiter":"",
+            "description":"",
+            "readingType":"TEMPERATURE",
+            "minimum":-40,
+            "maximum":85
+        },
+        {
+        	"id":411,
+            "name":"Pressure",
+            "reference":"P",
+            "unit":"mb",
+            "dataType":"NUMERIC",
+            "precision":1,
+            "size":1,
+            "delimiter":"",
+            "description":"",
+            "readingType":"PRESSURE",
+            "minimum":300,
+            "maximum":1100
+        },
+        {
+            "id":412,
+            "name":"Humidity",
+            "reference":"H",
+            "unit":"%",
+            "dataType":"NUMERIC",
+            "precision":1,
+            "size":1,
+            "delimiter":"",
+            "description":"",
+            "readingType":"HUMIDITY",
+            "minimum":0,"maximum":100
+        }
+    ],
+    "actuators":[
+    	{
+    	    "id":338,
+    	    "name":"LED Switch",
+    	    "reference":"SW",
+    	    "unit":"",
+    	    "dataType":"BOOLEAN",
+    	    "precision":1,
+    	    "size":1,
+    	    "delimiter":"",
+    	    "description":"",
+    	    "readingType":"SW",
+    	    "minimum":0,
+    	    "maximum":1
+    	}
+    ],
+    "alarms":[
+    	{
+    	    "id":70,
+    	    "name":"High Humidity",
+    	    "description":"This alarm will trigger if be displayed if humidity is over a certain threshold",
+    	    "message":"High humidity has been detected",
+    	    "severity":"ALERT",
+    	    "reference":"HH"
+    	}
+    ],
+    "configs":[],
+    "inUse":true
+}

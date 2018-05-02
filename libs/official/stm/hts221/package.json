@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Driver for ST Microelectronics HTS221 I2C temperature and humidity sensor",
+    "fullname": "lib.stm.hts221",
+    "git_pointer": "zerynth://zerynth-libs/stm-hts221",
+    "info": {
+        "chip_manufacturer": "ST Microelectronics",
+        "chip_name": "HTS221",
+        "name": "Humidity and Temperature Sensor",
+        "type": "Actuator"
+    },
+    "keywords": [
+        "stm",
+        "temerature",
+        "humidity"
+    ],
+    "repo": "official",
+    "title": "HTS221 temperature and humidity sensor",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

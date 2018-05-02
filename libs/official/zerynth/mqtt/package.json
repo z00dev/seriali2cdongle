@@ -1,0 +1,19 @@
+{
+    "dependencies": {},
+    "description": "MQTT protocol support",
+    "fullname": "lib.zerynth.mqtt",
+    "git_pointer": "zerynth://zerynth-libs/zerynth-mqtt",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth MQTT Library",
+        "type": "Protocol"
+    },
+    "keywords": [
+        "mqtt"
+    ],
+    "repo": "official",
+    "title": "MQTT Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

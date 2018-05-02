@@ -1,0 +1,22 @@
+{
+    "dependencies": {},
+    "description": "Driver for Bosch BME280 environmental sensor",
+    "fullname": "lib.bosch.bme280",
+    "git_pointer": "zerynth://zerynth-libs/bosch-bme280",
+    "info": {
+        "chip_manufacturer": "Bosch",
+        "chip_name": "BME280",
+        "name": "Environmental Sensor",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "bosch",
+        "pressure",
+        "temperature",
+        "humidity"
+    ],
+    "repo": "official",
+    "title": "BME280 Envornmental Sensor",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

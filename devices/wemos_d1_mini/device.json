@@ -1,0 +1,34 @@
+{
+    "name":"Wemos D1 Mini",
+    "target":"wemos_d1_mini",
+    "cc":"xtensalx106gcc",
+    "classes":["wemos_d1_mini.WemosD1Mini"],
+    "ram":80,
+    "flash":4096,
+    "family_type":"xtensa-lx106",
+    "family_name":"esp8266",
+    "chip_model":"esp8266",
+    "manual_reset": 0,
+    "preferred_baud":115200,
+    "board_producer":"Wemos",
+    "chip_manifacturer":"Espressif",
+    "architecture":"xtensa-lx106",
+    "gccopts":{
+        "cflags": ["-Os","-Wpointer-arith","-Wno-implicit-function-declaration","-Wl,-EL","-fno-inline-functions","-nostdlib","-mlongcalls","-mtext-section-literals","-falign-functions=4","-ffunction-sections","-fdata-sections", "-DICACHE_FLASH","-std=c99"],
+        "defs": ["ESP8266-RTOS","BYTECODE_ACCESS_ALIGNED_4","VM_DEFAULT_THREAD_SIZE=1024"]
+    },
+    "relocator":"xtensalx106",
+    "vm_chunk":64,
+    "type":"board",
+    "virtualizable":"WemosD1Mini",
+    "has_alter_ego":false,
+    "uplink_reset": "reset",
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

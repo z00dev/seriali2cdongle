@@ -1,0 +1,34 @@
+{
+    "name":"Particle Core",
+    "target":"particle_core",
+    "cc":"armgcc",
+    "classes":["pcore.ParticleCore","pcore_dfu.ParticleCoreDFU"],
+    "ram":20,
+    "flash":128,
+    "family_type":"armcmx",
+    "family_name":"stm32f1",
+    "chip_model":"stm32f103",
+    "manual_reset": 1,
+    "preferred_baud":115200,
+    "board_producer":"Particle",
+    "chip_manifacturer":"STM",
+    "architecture":"cortex-m3",
+    "gccopts":{
+        "cflags":["-mcpu=cortex-m3","-mthumb", "-O2","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99"],
+        "defs":["STM32F10X_MD","STM32F1xx","STM32F103xx","STM32F103RB","VM_DEFAULT_THREAD_SIZE=1024"]
+    },
+    "relocator":"cortex-m",
+    "type":"board",
+    "virtualizable":"ParticleCoreDFU",
+    "has_alter_ego":"ParticleCore",
+    "uplink_reset": true,
+    "reset_time":2000,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "dependencies": {},
+    "description": "Driver for MAXIM MAX7219 for Led Display (7-Segment-8-Digit or 8x8-Led-Matrix)",
+    "fullname": "lib.maxim.max7219",
+    "git_pointer": "zerynth://zerynth-libs/maxim-max7219",
+    "info": {
+        "chip_manufacturer": "Maxim",
+        "chip_name": "MAX7219",
+        "name": "LED Display Driver",
+        "type": "Actuator"
+    },
+    "keywords": [
+        "maxim",
+        "led",
+        "display",
+        "matrix",
+        "segments",
+        "digit"
+    ],
+    "repo": "official",
+    "title": "MAX7219 Led Display Driver",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

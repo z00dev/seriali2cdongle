@@ -1,0 +1,28 @@
+{
+    "dependencies": {
+        "lib.espressif.esp8266wifi": "r2.1.1",
+        "sys.zerynth.esptool": "r2.1.1",
+        "sys.zerynth.xtensalx106": "r2.1.1",
+        "vhal.zerynth.xtensalx106_esp8266": "r2.1.1"
+    },
+    "description": "Add support for Wireless Tag WT8266-DK V2",
+    "fullname": "board.zerynth.wt8266_s2",
+    "git_pointer": "zerynth://zerynth-boards/wt8266_s2",
+    "info": {
+        "board": "Wireless Tag WT8266-DK V2",
+        "chip_manufacturer": "Espressif",
+        "device": "esp8266",
+        "family_type": "Xtensa lx106"
+    },
+    "keywords": [
+        "espressif",
+        "esp8266",
+        "board",
+        "wireless",
+        "tag,"
+    ],
+    "repo": "official",
+    "title": "Wireless Tag WT8266-DK V2 Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

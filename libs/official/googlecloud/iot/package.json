@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "Google Cloud IoT Core support",
+    "fullname": "lib.googlecloud.iot",
+    "git_pointer": "zerynth://zerynth-libs/googlecloud-iot",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth Google Cloud IoT Core Library",
+        "type": "IoT Cloud"
+    },
+    "keywords": [
+        "googlecloud",
+        "iot",
+        "cloud"
+    ],
+    "repo": "official",
+    "title": "Google Cloud IoT Core Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

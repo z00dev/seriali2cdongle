@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "lib.zerynth.zadm": "r2.1.1"
+    },
+    "description": "Zerynth App support to control devices",
+    "fullname": "lib.zerynth.zerynthapp",
+    "git_pointer": "zerynth://zerynth-libs/zerynth-zerynthapp",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth App Library",
+        "type": "Tool"
+    },
+    "keywords": [
+        "app"
+    ],
+    "repo": "official",
+    "title": "Zerynth App Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

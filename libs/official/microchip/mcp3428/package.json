@@ -1,0 +1,24 @@
+{
+    "dependencies": {},
+    "description": "Driver for Microchip MCP3426/3427/3428 ADC",
+    "fullname": "lib.microchip.mcp3428",
+    "git_pointer": "zerynth://zerynth-libs/microchip-mcp3428",
+    "info": {
+        "chip_manufacturer": "Microchip",
+        "chip_name": "MCP3428",
+        "name": "Analog-to-Digital Converter",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "adc",
+        "delta-sigma",
+        "mcp3426",
+        "mcp3427",
+        "mcp3428",
+        "microchip"
+    ],
+    "repo": "official",
+    "title": "Microchip MCP3426/3427/3428 Analog-to-Digital Converter",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

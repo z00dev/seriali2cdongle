@@ -1,0 +1,21 @@
+{
+    "dependencies": {},
+    "description": "AWS Greengrass support",
+    "fullname": "lib.aws.greengrass",
+    "git_pointer": "zerynth://zerynth-libs/aws-greengrass",
+    "info": {
+        "chip_manufacturer": "-",
+        "chip_name": "-",
+        "name": "Zerynth AWS Greengrass Library",
+        "type": "IoT Cloud"
+    },
+    "keywords": [
+        "aws",
+        "iot",
+        "greengrass"
+    ],
+    "repo": "official",
+    "title": "AWS Greengrass Library",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "lib.texas.cc3000": "r2.1.1",
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.dfu": "r2.1.1",
+        "vhal.zerynth.armcmx_stm32f1": "r2.1.1"
+    },
+    "description": "Add support for Particle Core",
+    "fullname": "board.zerynth.particle_core",
+    "git_pointer": "zerynth://zerynth-boards/particle_core",
+    "info": {
+        "board": "Particle Core",
+        "chip_manufacturer": "ST Microelectronics",
+        "device": "stm32f103",
+        "family_type": "ARM Cortex M3"
+    },
+    "keywords": [
+        "particle",
+        "board"
+    ],
+    "repo": "official",
+    "title": "Particle Core Support Package",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

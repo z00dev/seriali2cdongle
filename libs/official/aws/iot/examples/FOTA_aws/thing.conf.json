@@ -1,0 +1,7 @@
+{
+    "cert_arn": "",
+    "endpoint": "",
+    "mqttid": "my_aws_thing",
+    "policy_name": "my_aws_thing_policy",
+    "thingname": "my_aws_thing"
+}

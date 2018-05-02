@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "lib.espressif.esp32net": "r2.1.1",
+        "sys.zerynth.esptool": "r2.1.1",
+        "sys.zerynth.xtensalx6": "r2.1.1",
+        "vhal.zerynth.xtensalx6_esp32": "r2.1.1"
+    },
+    "description": "Add support for NodeMCU ESP-32S",
+    "fullname": "board.zerynth.nodemcu_esp32",
+    "git_pointer": "zerynth://zerynth-boards/nodemcu_esp32",
+    "info": {
+        "board": "NodeMCU ESP-32S",
+        "chip_manufacturer": "Espressif",
+        "device": "esp32",
+        "family_type": "Xtensa lx6"
+    },
+    "keywords": [
+        "espressif",
+        "esp32",
+        "board"
+    ],
+    "repo": "official",
+    "title": "NodeMCU ESP-32S Support Package",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

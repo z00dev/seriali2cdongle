@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "lib.broadcom.bcm43362": "r2.1.1",
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.dfu": "r2.1.1",
+        "vhal.zerynth.armcmx_stm32f2": "r2.1.1"
+    },
+    "description": "Add support for SparkFun Photon",
+    "fullname": "board.zerynth.sparkfun_photon",
+    "git_pointer": "zerynth://zerynth-boards/sparkfun_photon",
+    "info": {
+        "board": "Sparkfun Photon RedBoard",
+        "chip_manufacturer": "ST Microelectronics",
+        "device": "stm32f205",
+        "family_type": "ARM Cortex M3"
+    },
+    "keywords": [
+        "sparkfun",
+        "board",
+        "wifi"
+    ],
+    "repo": "official",
+    "title": "SparkFun Photon RedBoard Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

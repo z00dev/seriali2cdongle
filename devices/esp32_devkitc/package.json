@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "lib.espressif.esp32net": "r2.1.1",
+        "sys.zerynth.esptool": "r2.1.1",
+        "sys.zerynth.xtensalx6": "r2.1.1",
+        "vhal.zerynth.xtensalx6_esp32": "r2.1.1"
+    },
+    "description": "Add support for Esp32 DevKitC",
+    "fullname": "board.zerynth.esp32_devkitc",
+    "git_pointer": "zerynth://zerynth-boards/esp32_devkitc",
+    "info": {
+        "board": "Esp32 DevKitC",
+        "chip_manufacturer": "Espressif",
+        "device": "esp32",
+        "family_type": "Xtensa lx6"
+    },
+    "keywords": [
+        "espressif",
+        "esp32",
+        "board"
+    ],
+    "repo": "official",
+    "title": "Esp32 DevKitC Support Package",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

@@ -1,0 +1,28 @@
+{
+    "dependencies": {
+        "lib.espressif.esp32net": "r2.1.1",
+        "sys.zerynth.esptool": "r2.1.1",
+        "sys.zerynth.xtensalx6": "r2.1.1",
+        "vhal.zerynth.xtensalx6_esp32": "r2.1.1"
+    },
+    "description": "Add support for Pycom FiPy 1.0",
+    "fullname": "board.zerynth.pycom_fipy_v1",
+    "git_pointer": "zerynth://zerynth-boards/pycom_fipy_v1",
+    "info": {
+        "board": "Pycom FiPy 1.0",
+        "chip_manufacturer": "Espressif",
+        "device": "esp32",
+        "family_type": "Xtensa lx6"
+    },
+    "keywords": [
+        "espressif",
+        "esp32",
+        "board",
+        "Pycom",
+        "FiPy"
+    ],
+    "repo": "official",
+    "title": "Pycom FiPy 1.0 Support Package",
+    "version": "r2.1.1",
+    "whatsnew": "first Release"
+}

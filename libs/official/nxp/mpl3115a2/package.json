@@ -1,0 +1,23 @@
+{
+    "dependencies": {},
+    "description": "Driver for NXP MPL3115A2 Pressure Sensor",
+    "fullname": "lib.nxp.mpl3115a2",
+    "git_pointer": "zerynth://zerynth-libs/nxp-mpl3115a2",
+    "info": {
+        "chip_manufacturer": "NXP",
+        "chip_name": "MPL3115A2",
+        "name": "Pressure Sensor",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "nxp",
+        "pressure",
+        "temperature",
+        "altitude",
+        "sensor"
+    ],
+    "repo": "official",
+    "title": "NXP MPL3115A2 Pressure Sensor",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

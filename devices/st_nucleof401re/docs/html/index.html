@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ST Microlectronics Nucleo F401RE &mdash; ST Nucleo F401RE 0.3.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/zerynth.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ST Nucleo F401RE 0.3.0 documentation" href="#"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="#" class="fa fa-home"> ST Nucleo F401RE</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ST Microlectronics Nucleo F401RE</a><ul>
+<li><a class="reference internal" href="#zerynth-pin-mapping-and-associated-features">ZERYNTH Pin Mapping and Associated Features</a></li>
+<li><a class="reference internal" href="#zerynth-flash-layout">ZERYNTH Flash Layout</a></li>
+<li><a class="reference internal" href="#board-summary">Board Summary</a></li>
+<li><a class="reference internal" href="#power">Power</a></li>
+<li><a class="reference internal" href="#connect-virtualize-and-program">Connect, Virtualize and Program</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">ST Nucleo F401RE</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>ST Microlectronics Nucleo F401RE</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="st-microlectronics-nucleo-f401re">
+<span id="st-nucleo"></span><h1>ST Microlectronics Nucleo F401RE<a class="headerlink" href="#st-microlectronics-nucleo-f401re" title="Permalink to this headline">¶</a></h1>
+<p>The STM32 Nucleo board provides an affordable and flexible way for users to try out new ideas and build prototypes with <a class="reference external" href="http://www.st.com/web/en/catalog/mmc/FM141/SC1169?sc=stm32">STM32 microcontrollers</a> . The Arduino™ connectivity support and ST Morpho headers make it easy to expand the functionality of the STM32 Nucleo board with a wide choice of specialized shields and sensors. The STM32 Nucleo board does not require any separate probe as it integrates the ST-LINK/V2-1 debugger/programmer.</p>
+<div class="figure align-center" style="width: 400px">
+<img alt="St Nucleo Board" src="_images/StNucleo.jpg" />
+</div>
+<p><em>St Microelectronics Nucleo F401RE. Copyright st.com</em></p>
+<p><strong>Very Important:</strong> ST Nucleo uploader requires a firmware upgrade to properly work with ZERYNTH and with other serial terminal. ST-Link firmware can be upgraded following the <a class="reference external" href="https://developer.mbed.org/teams/ST/wiki/Nucleo-Firmware">ST official procedure</a>.</p>
+<p><strong>Warning:</strong> Unlike other Arduino-like boards, the ST Nucleo board runs at 3.3V. The maximum voltage that the I/O pins can tolerate is 3.3V. Providing higher voltages, like 5V to an I/O pin could damage the board.</p>
+<p><strong>Note:</strong> all the reported information are extracted from the official <a class="reference external" href="http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF260000?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&amp;sc=nucleoF401RE-pr">ST Nucelo F401RE reference page</a>, visit this page for more details and updates.</p>
+<div class="section" id="zerynth-pin-mapping-and-associated-features">
+<h2>ZERYNTH Pin Mapping and Associated Features<a class="headerlink" href="#zerynth-pin-mapping-and-associated-features" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" style="width: 700px">
+<img alt="St Nucleo Pin Map" src="_images/StNucleoPin.png" />
+</div>
+<p>ST Nucleo Official Schematic, Reference Design and Pin Mapping are available on the official <a class="reference external" href="http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF260000?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&amp;sc=nucleoF401RE-pr">ST Nucelo F401RE documentation page</a></p>
+</div>
+<div class="section" id="zerynth-flash-layout">
+<h2>ZERYNTH Flash Layout<a class="headerlink" href="#zerynth-flash-layout" title="Permalink to this headline">¶</a></h2>
+<p>The internal flash of the ST Nucleo F401RE is organized into sectors of different size according to the following table:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="19%" />
+<col width="46%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Start address</th>
+<th class="head">Size</th>
+<th class="head">Content</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0x8000000</td>
+<td>16Kb</td>
+<td>Virtual Machine</td>
+</tr>
+<tr class="row-odd"><td>0x8004000</td>
+<td>16Kb</td>
+<td>Virtual Machine</td>
+</tr>
+<tr class="row-even"><td>0x8008000</td>
+<td>16Kb</td>
+<td>Virtual Machine</td>
+</tr>
+<tr class="row-odd"><td>0x800C000</td>
+<td>16Kb</td>
+<td>Virtual Machine</td>
+</tr>
+<tr class="row-even"><td>0x8010000</td>
+<td>64Kb</td>
+<td>Virtual Machine</td>
+</tr>
+<tr class="row-odd"><td>0x8020000</td>
+<td>128kb</td>
+<td>Bytecode Bank 0</td>
+</tr>
+<tr class="row-even"><td>0x8040000</td>
+<td>128kb</td>
+<td>Bytecode Bank 1</td>
+</tr>
+<tr class="row-odd"><td>0x8060000</td>
+<td>128kb</td>
+<td>Bytecode Bank 2</td>
+</tr>
+</tbody>
+</table>
+<p>If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 2) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.</p>
+</div>
+<div class="section" id="board-summary">
+<h2>Board Summary<a class="headerlink" href="#board-summary" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Microcontroller: STM32F401RET6 ARM®32-bit Cortex®-M4 CPU</li>
+<li>Operating Voltage: 3.3V</li>
+<li>Input Voltage: 7-12V</li>
+<li>Digital I/O Pins (DIO): 50</li>
+<li>Analog Input Pins (ADC): 16</li>
+<li>Analog Outputs Pins (DAC): 0</li>
+<li>UARTs: 3</li>
+<li>SPIs: 3</li>
+<li>I2Cs: 3</li>
+<li>CANs: 0</li>
+<li>Flash Memory: 512 KB</li>
+<li>SRAM: 96 KB</li>
+<li>Clock Speed: 84 MHz</li>
+<li>Size (LxW mm):82.5 x 70.0</li>
+</ul>
+</div>
+<div class="section" id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p>On the ST Nucleo the power supply is provided either by the host PC through the USB cable, or by an external Source: VIN (7V-12V), E5V (5V) or +3V3 power supply pins on CN6 or CN7. In case VIN, E5V or +3V3 is used to power the Nucleo board, using an external power supply unit or an auxiliary equipment, this power source must comply with the standard EN-60950-1: 2006+A11/2009, and must be Safety Extra Low Voltage (SELV) with limited power capability.</p>
+<p>The ST-LINK/V2-1 supports USB power management allowing to request more than 100 mA current to the host PC. All parts of the STM32 Nucleo board and shield can be powered from the ST-LINK USB connector CN1 (U5V or VBUS). Note that during the USB enumeration, the STM32 Nucleo board requires 300 mA of current to the Host PC. If the host is able to provide the required power, the targeted STM32 microcontroller is powered and the red LED 3 is turned ON, thus the STM32 Nucleo board and its shield can consume a maximum of 300 mA current, not more.</p>
+<p>When the board is power supplied by USB (U5V) a jumper must be connected between pin 1 and pin 2 of JP5. The jumper must be connected between pin 2 and pin 3 if external power sources are used.</p>
+</div>
+<div class="section" id="connect-virtualize-and-program">
+<h2>Connect, Virtualize and Program<a class="headerlink" href="#connect-virtualize-and-program" title="Permalink to this headline">¶</a></h2>
+<p>The ST Nucleo Programming port is connected to the ST-Link uploader creating a virtual COM port on a connected computer. To recognize the device, Windows machines requires drivers that can be downloaded from <a class="reference external" href="https://developer.mbed.org/teams/ST/wiki/ST-Link-Driver">the ST Nucleo download page</a>, while MAC OS X and Linux machines will recognize the board automatically.</p>
+<p>The St-Link is also connected to the STM32 hardware UART0 also connected with pins RX0 and TX0 available on the Arduino headers.</p>
+<p>Once connected on a USB port, if drivers have been correctly installed the ST Nucleo board is recognized by the ZERYNTH IDE and listed in the <strong>Board Management Toolbar</strong>. The ST Nucleo can be Viperized by clicking the Virtualize button without requiring any other user interventions. Once virtualized the Nucleo prints on the serial port the installed Virtual Machine version. To test it, just open the ZERYNTH IDE serial console and reset the board through the dedicated button. The VM version will be printed on the console.
+After 5 seconds the board also prints the &#8220;KO&#8221; message. This means that the ZERYNTH VM is started and the ZERYNTH bytecode execution started.</p>
+<p>ZERYNTH scripts can be uploaded on virtualized ST Nucleo by clicking the dedicated upload button available on the <strong>Current Project</strong> panel of the IDE. After that the IDE will notify the user to reset the board. Do this by clicking the reset button on the board (the black button). If the reset is not performed within 5 seconds the upload procedure fails.</p>
+<p><strong>Note:</strong> <em>Scripts uploading and serial console connection issues have been reported with St Nucleo boards. If the upload fails also with a correctly performed reset or if the board is not able to print on the console, disconnect the board from the USB port and plug it again on another USB socket.</em></p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright ZERYNTH Team.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ <script type="text/javascript">
+ var vurl
+ if(location.href.indexOf("127.0.0.1")>=0) vurl=location.protocol+"//"+location.host+"/docs"
+ else vurl="http://doc.zerynth.com"
+ $(document).ready(function(){
+                   $('.wy-breadcrumbs a:contains("Docs")').before('<a href="'+vurl+'">Zerynth</a> &#187;')
+                   $('.wy-side-nav-search > a').removeClass("fa-home").removeClass("fa")
+                   $('.wy-side-nav-search').prepend('<div class="viper-circle"><a href="'+vurl+'"><span style="color:#1c5e60" class="zerynth-Logo2"></span></a></div>')
+ })
+ </script>
+
+
+</body>
+</html>

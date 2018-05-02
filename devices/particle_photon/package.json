@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "lib.broadcom.bcm43362": "r2.1.1",
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.dfu": "r2.1.1",
+        "vhal.zerynth.armcmx_stm32f2": "r2.1.1"
+    },
+    "description": "Add support for Particle Photon",
+    "fullname": "board.zerynth.particle_photon",
+    "git_pointer": "zerynth://zerynth-boards/particle_photon",
+    "info": {
+        "board": "Particle Photon",
+        "chip_manufacturer": "ST Microelectronics",
+        "device": "stm32f205",
+        "family_type": "ARM Cortex M3"
+    },
+    "keywords": [
+        "particle",
+        "board",
+        "wifi"
+    ],
+    "repo": "official",
+    "title": "Particle Photon Support Package",
+    "version": "r2.1.1",
+    "whatsnew": ""
+}

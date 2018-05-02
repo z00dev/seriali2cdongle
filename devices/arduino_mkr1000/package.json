@@ -1,0 +1,29 @@
+{
+    "dependencies": {
+        "lib.microchip.winc1500": "r2.1.1",
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.bossac": "r2.1.1",
+        "vhal.zerynth.armcmx_atmelsamd21": "r2.1.1"
+    },
+    "description": "Add support for Arduino/Genuino MKR1000",
+    "fullname": "board.zerynth.arduino_mkr1000",
+    "git_pointer": "zerynth://zerynth-boards/arduino_mkr1000",
+    "info": {
+        "board": "Arduino MKR1000",
+        "chip_manufacturer": "Microchip/Atmel",
+        "device": "samd21",
+        "family_type": "ARM Cortex M0+"
+    },
+    "keywords": [
+        "arduino",
+        "genuino",
+        "board",
+        "atmel",
+        "microchip",
+        "wifi"
+    ],
+    "repo": "official",
+    "title": "Arduino/Genuino MKR1000 Support Package",
+    "version": "r2.1.1",
+    "whatsnew": " "
+}

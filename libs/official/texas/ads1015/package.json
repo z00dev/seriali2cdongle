@@ -1,0 +1,22 @@
+{
+    "dependencies": {},
+    "description": "Driver for TI ADS101x ADC",
+    "fullname": "lib.texas.ads1015",
+    "git_pointer": "zerynth://zerynth-libs/texas-ads1015",
+    "info": {
+        "chip_manufacturer": "Texas Instruments",
+        "chip_name": "ADS1015",
+        "name": "Analog-to-Digital Converter",
+        "type": "Sensor"
+    },
+    "keywords": [
+        "ADC",
+        "PGA",
+        "delta-sigma",
+        "comparator"
+    ],
+    "repo": "official",
+    "title": "ADS1015 ADC",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}

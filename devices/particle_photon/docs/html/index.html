@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Particle Photon &mdash; Particle Photon 0.3.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/zerynth.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Particle Photon 0.3.0 documentation" href="#"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="#" class="fa fa-home"> Particle Photon</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Particle Photon</a><ul>
+<li><a class="reference internal" href="#zerynth-pin-mapping-and-associated-features">ZERYNTH Pin Mapping and Associated Features</a></li>
+<li><a class="reference internal" href="#zerynth-flash-layout">ZERYNTH Flash Layout</a></li>
+<li><a class="reference internal" href="#board-summary">Board Summary</a></li>
+<li><a class="reference internal" href="#power">Power</a></li>
+<li><a class="reference internal" href="#connect-virtualize-and-program">Connect, Virtualize and Program</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Particle Photon</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>Particle Photon</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="particle-photon">
+<span id="id1"></span><h1>Particle Photon<a class="headerlink" href="#particle-photon" title="Permalink to this headline">¶</a></h1>
+<p>The Particle Photon is a complete Wi-Fi enabled development platform for creating connected devices with ease, the successor of the Particle Core. Particle Photon combines a powerful ARM Cortex M3 micro-controller with a Broadcom Wi-Fi chip in a tiny thumbnail-sized module called the PØ (P-zero).
+Particle Photon uses the <a class="reference external" href="http://docs.particle.io/photon/hardware/">STM32F205RG Cortex M3  microcontroller</a>.</p>
+<div class="figure align-center" style="width: 400px">
+<img alt="Particle Photon Board" src="_images/ParticlePhoton.jpg" />
+</div>
+<p><em>Particle Photon. Copyright particle.io</em></p>
+<p>In addition to having 1Mb of internal flash memory for storing the firmware, the Photon also features 128k of Ram and 120 MHz of clock.</p>
+<p><strong>Note:</strong> all the reported information are extracted from the official <a class="reference external" href="http://docs.particle.io/photon/">Particle Photon reference page</a>, visit this page for more details and updates.</p>
+<div class="section" id="zerynth-pin-mapping-and-associated-features">
+<h2>ZERYNTH Pin Mapping and Associated Features<a class="headerlink" href="#zerynth-pin-mapping-and-associated-features" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" style="width: 700px">
+<img alt="Particle Photon Pin Map" src="_images/ParticlePhotonPin.png" />
+</div>
+<p>Particle Photon Official Schematic, Reference Design &amp; Pin Mapping are available on the <a class="reference external" href="http://docs.particle.io/photon/">official Particle Photon reference page</a>.</p>
+</div>
+<div class="section" id="zerynth-flash-layout">
+<h2>ZERYNTH Flash Layout<a class="headerlink" href="#zerynth-flash-layout" title="Permalink to this headline">¶</a></h2>
+<p>The internal flash of the Particle Photon is organized into sectors of different size according to the following table:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="19%" />
+<col width="46%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Start address</th>
+<th class="head">Size</th>
+<th class="head">Content</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0x8000000</td>
+<td>16Kb</td>
+<td>BootLoader</td>
+</tr>
+<tr class="row-odd"><td>0x8004000</td>
+<td>16Kb</td>
+<td>DCT1</td>
+</tr>
+<tr class="row-even"><td>0x8008000</td>
+<td>16Kb</td>
+<td>DCT2</td>
+</tr>
+<tr class="row-odd"><td>0x800C000</td>
+<td>16Kb</td>
+<td>EEPROM1</td>
+</tr>
+<tr class="row-even"><td>0x8010000</td>
+<td>64Kb</td>
+<td>EEPROM2</td>
+</tr>
+<tr class="row-odd"><td>0x8020000</td>
+<td>128kb</td>
+<td>Virtual Machine</td>
+</tr>
+<tr class="row-even"><td>0x8040000</td>
+<td>128kb</td>
+<td>Bytecode Bank 0</td>
+</tr>
+<tr class="row-odd"><td>0x8060000</td>
+<td>128kb</td>
+<td>Bytecode Bank 1</td>
+</tr>
+<tr class="row-even"><td>0x8080000</td>
+<td>128kb</td>
+<td>Bytecode Bank 2</td>
+</tr>
+<tr class="row-odd"><td>0x80A0000</td>
+<td>128kb</td>
+<td>Bytecode Bank 3</td>
+</tr>
+<tr class="row-even"><td>0x80C0000</td>
+<td>128kb</td>
+<td>Bytecode Bank 4</td>
+</tr>
+<tr class="row-odd"><td>0x80E0000</td>
+<td>128kb</td>
+<td>Bytecode Bank 5</td>
+</tr>
+</tbody>
+</table>
+<p>To avoid deleting the Photon configuration it is suggested to not write to sectors between 0x8004000 and 0x8020000.
+If internal flash is used in a Zerynth program, it is suggested to begin using pages from the end of flash (bytecode bank 5) towards the virtual machine, to minimize the chance of clashes. Since writing to a sector entails erasing it first, the write operation can be slow even for small chunks of data, depending on the size of the choosen sector.</p>
+</div>
+<div class="section" id="board-summary">
+<h2>Board Summary<a class="headerlink" href="#board-summary" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Microcontroller: ARM 32-bit Cortex™-M3 CPU Core</li>
+<li>Operating Voltage: 3.3V</li>
+<li>Input Voltage: 3.6-6V</li>
+<li>Digital I/O Pins (DIO): 18</li>
+<li>Analog Input Pins (ADC): 5</li>
+<li>Analog Outputs Pins (DAC): 1</li>
+<li>UARTs: 1</li>
+<li>SPIs: 2</li>
+<li>I2Cs: 1</li>
+<li>CANs: 1</li>
+<li>Flash Memory: 1Mb</li>
+<li>SRAM: 128 KB</li>
+<li>Clock Speed: 120Mhz</li>
+<li>Size (LxW mm): 36.58 X 20.32</li>
+</ul>
+</div>
+<div class="section" id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p>Power to the Photon is supplied via the on-board USB Micro B connector or directly via the VIN pin. If power is supplied directly to the VIN pin, the voltage should be regulated between 3.6VDC and 5.5VDC. When the Photon is powered via the USB port, VIN will output a voltage of approximately 4.8VDC due to a reverse polarity protection series schottky diode between V+ of USB and VIN. When used as an output, the max load on VIN is 1A.
+Typical current consumption is 80mA with a 5V input. Deep sleep quiescent current is 160uA. When powering the Photon from the USB connector, make sure to use a quality cable to minimize voltage drops. If a high resistance cable (i.e., low current) is used, peak currents drawn from the Photon when transmitting and receiving will result in voltage sag at the input which may cause a system brown out or intermittent operation. Likewise, the power source should be sufficient enough to source 1A of current to be on the safe side.</p>
+</div>
+<div class="section" id="connect-virtualize-and-program">
+<h2>Connect, Virtualize and Program<a class="headerlink" href="#connect-virtualize-and-program" title="Permalink to this headline">¶</a></h2>
+<p>On Windows machines the <a class="reference external" href="https://s3.amazonaws.com/spark-website/Spark.zip">Particle Photon USB Drivers</a> are required by the ZERYNTH IDE for accessing the  serial port establishing a connection with the STM32 UART.</p>
+<p>To install the drivers on Windows plug the Photon on an USB port, unzip the downloaded package, go to the Windows Devices Manager and double-click on the Particle device under “Other Devices”. Click Update Driver, and select Browse for driver software on your computer. Navigate to the folder where the package has been unzipped and select it (Note that right now, the drivers are in a Spark folder and are named photon.cat).</p>
+<p>It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow Photon driver installation. There are good instructions on how to do that in <a class="reference external" href="http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/">this guide</a>.</p>
+<p>On MAC OS X and Linux USB drivers are not required.</p>
+<p>In Linux however the following udev rules may need to be added:</p>
+<div class="highlight-python"><div class="highlight"><pre>#Particle Photon
+SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;2b04&quot;, ATTRS{idProduct}==&quot;d006&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;tty&quot;, ATTRS{idVendor}==&quot;2b04&quot;, ATTRS{idProduct}==&quot;d006&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;2b04&quot;, ATTRS{idProduct}==&quot;c006&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;tty&quot;, ATTRS{idVendor}==&quot;2b04&quot;, ATTRS{idProduct}==&quot;c006&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+</pre></div>
+</div>
+<p>Once connected on a USB port, if drivers have been correctly installed, the Photon can be seen as Virtual Serial port and it is automatically recognized by the ZERYNTH IDE and listed in the <strong>Boards Management Toolbar</strong> as <em>Particle Photon virtualizable</em> if never virtualized before, or as <em>Particle Photon virtualized</em> if already flashed with a ZERYNTH Virtual Machine.</p>
+<p>To virtualize a Photon or to update the ZERYNTH VM installed on it, it is necessary to put the Photon in DFU Mode (Device Firmware Upgrade) as reported in the official <a class="reference external" href="http://docs.particle.io/photon/modes/">Particle Photon Guide</a> .
+<strong>Note:</strong> On Windows machines it is necessary to install also the Photon DFU drivers for virtualizeing the board. The official Particle Core DFU driver and the related installation procedure are reported <a class="reference external" href="https://community.particle.io/t/tutorial-installing-dfu-driver-on-windows-24-feb-2015/3518">here</a> but they also work for the Photon.</p>
+<p>Follow these steps to virtualize a Particle Photon:</p>
+<ul class="simple">
+<li>Ensure that your Particle Photon has been connected at least once to the Particle Cloud and has downloaded the latest firmware</li>
+<li>Hold down BOTH buttons</li>
+<li>Release only the RST button, while holding down the SETUP button</li>
+<li>Wait for the LED to start flashing magenta, then yellow</li>
+<li>Release the SETUP button</li>
+<li>The Photon is now in DFU Mode (yellow blinking led)</li>
+<li>Select the Photon on the Board Management Toolbar and click virtualize</li>
+<li><strong>The Photon is now virtualized, check it on the Board Management Toolbar</strong></li>
+</ul>
+<p>Follow these steps to upload a ZERYNTH script on a virtualized Photon:</p>
+<ul class="simple">
+<li>Select the virtualized Photon on the Board Bar List</li>
+<li>Click upload</li>
+<li>Reset the Photon by pressing the RST button when asked</li>
+<li><strong>The script is now running on the Photon</strong></li>
+</ul>
+<p>ZERYNTH overwrites the original Particle firmware, freeing almost 800Kb of flash to hold bytecode. To restore the Particle Photon to its original state, a factory reset is not enough. The ZERYNTH IDE is able to flash the original Particle firmware on the Photon from the virtualize dialog:</p>
+<ul class="simple">
+<li>Put the Photon in DFU mode</li>
+<li>Select the Photon on the Board Management Toolbar and click virtualize</li>
+<li>From the dialog choose Restore Original Firmware</li>
+<li>Do a factory reset and connect your Photon to the Particle Cloud to restore the latest firmware</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright ZERYNTH Team.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ <script type="text/javascript">
+ var vurl
+ if(location.href.indexOf("127.0.0.1")>=0) vurl=location.protocol+"//"+location.host+"/docs"
+ else vurl="http://doc.zerynth.com"
+ $(document).ready(function(){
+                   $('.wy-breadcrumbs a:contains("Docs")').before('<a href="'+vurl+'">Zerynth</a> &#187;')
+                   $('.wy-side-nav-search > a').removeClass("fa-home").removeClass("fa")
+                   $('.wy-side-nav-search').prepend('<div class="viper-circle"><a href="'+vurl+'"><span style="color:#1c5e60" class="zerynth-Logo2"></span></a></div>')
+ })
+ </script>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "dependencies": {},
+    "description": "Driver for SOLOMON SSD1306 Controller for B/W OLED display",
+    "fullname": "lib.solomon.ssd1306",
+    "git_pointer": "zerynth://zerynth-libs/solomon-ssd1306",
+    "info": {
+        "chip_manufacturer": "SOLOMON",
+        "chip_name": "SSD1306",
+        "name": "OLED B/W Display Driver",
+        "type": "Actuator"
+    },
+    "keywords": [
+        "solomon",
+        "oled",
+        "display",
+        "Black and White"
+    ],
+    "repo": "official",
+    "title": "SSD1306 OLED display Controller",
+    "version": "r2.1.1",
+    "whatsnew": "First Release"
+}
